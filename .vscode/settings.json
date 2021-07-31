@@ -1,3 +1,6 @@
+// Le Javascript ici présent ne sers que pour l'extension Live Sass compiler. //
+// The settings.json file is only used for the extension Live Sass compiler. //
+
 {
     "liveSassCompile.settings.formats":[
        {
