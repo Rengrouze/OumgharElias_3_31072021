@@ -154,6 +154,7 @@ main {
 
 .Howtobox__title {
   margin-left: 5%;
+  margin-top: 50px;
 }
 
 .Howtobox ul {
@@ -171,14 +172,42 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   height: 70px;
-  width: 94%;
-  margin-left: 0%;
-  margin-right: 0%;
-  border-radius: 50px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 21.5px;
+  margin-bottom: 21.5px;
+  border-radius: 20px;
+  background: #f6f6f6;
+  -webkit-box-shadow: 0px 0.2px 0.2px #7e7e7e;
+          box-shadow: 0px 0.2px 0.2px #7e7e7e;
+  font-size: 1.3em;
+  position: relative;
+}
+
+.Howtobox__Step__number {
+  position: absolute;
+  left: -10px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: #FFFFFF;
+  height: 25px;
+  width: 25px;
+  font-size: 0.7em;
+  text-align: center;
+  line-height: 25px;
+}
+
+.Howtobox__Step__icon {
+  position: absolute;
+  left: 40px;
+  color: #7e7e7e;
+}
+
+.Howtobox__Step__icon--colored {
+  color: #9356DC;
 }
