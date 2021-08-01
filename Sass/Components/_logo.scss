@@ -1,0 +1,14 @@
+.Logo
+{
+    font-family: 'Shrikhand', cursive;
+    &--header
+    {
+        width: 100%;
+    }
+    &--footer
+    {
+    font-size: 1.5em;
+    color: $color-light;
+    margin-bottom: 2px;
+}
+}

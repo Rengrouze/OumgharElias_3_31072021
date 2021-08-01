@@ -1,0 +1,14 @@
+.header
+{
+    width: 100%;
+    text-align: center;
+    height: 63px;
+    &__arrow
+    {
+        position: absolute;
+        left: 8%;
+        top: 31.5px;
+        font-size: 1.3em;
+        color: $color-dark;
+    }
+}
