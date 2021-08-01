@@ -19,21 +19,6 @@
   color: #000000;
 }
 
-main {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Roboto';
-}
-
 .footer {
   height: 193px;
   background-color: #353535;
@@ -74,6 +59,21 @@ main {
 
 body {
   margin: 0;
+}
+
+main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Roboto';
 }
 
 .Logo {
@@ -137,4 +137,48 @@ body {
   background: linear-gradient(#FF79DA, #9356DC);
   font-size: 0.9em;
   font-weight: bolder;
+}
+
+.Howtobox {
+  width: 100%;
+  height: 440px;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Howtobox__title {
+  margin-left: 5%;
+}
+
+.Howtobox ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.Howtobox__Step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70px;
+  width: 94%;
+  margin-left: 0%;
+  margin-right: 0%;
+  border-radius: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
 }
