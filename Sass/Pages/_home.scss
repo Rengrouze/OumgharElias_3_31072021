@@ -9,4 +9,24 @@
 .Explorebox
 {
     background-color: $color-background;
+    height: 286px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    &__title
+    {
+        width: 65%;
+    }
+    &__Text
+    {
+        width: 75%;
+        color: $color-subtitle;
+    }
+    &__Button
+    {
+        @include buttonexplore();
+    }
 }
