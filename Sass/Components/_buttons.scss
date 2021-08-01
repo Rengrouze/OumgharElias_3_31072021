@@ -1,3 +1,11 @@
-@mixin buttonexplore {
+@mixin buttonexplore
+{
     color: white;
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    width: 218px;
+    background: linear-gradient($color-secondary, $color-primary);
+    font-size: 0.9em;
+    font-weight: bolder;
 }
