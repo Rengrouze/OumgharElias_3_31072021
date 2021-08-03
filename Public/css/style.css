@@ -407,7 +407,7 @@ main {
   margin-top: -45px;
   padding-top: 10px;
   width: 100%;
-  border-radius: 35px;
+  border-radius: 35px 35px 0 0;
 }
 
 .Menu__header {
