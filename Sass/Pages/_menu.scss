@@ -4,7 +4,7 @@
     z-index: -1;
     &__image
     {
-        height: 100%;
+        height: auto;
         width: 100%;
     }
 }
@@ -13,7 +13,16 @@
     z-index: 1;
     background-color: $color-light;
     margin-top: -45px;
-    padding-top: 40px;
+    padding-top: 10px;
     width: 100%;
     border-radius: 35px;
+    &__header
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 12px;
+        padding-right: 12px;
+        font-family: 'Shrikhand', cursive;
+    }
 }
