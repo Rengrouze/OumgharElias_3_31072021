@@ -91,6 +91,7 @@ main {
   margin-bottom: 2px;
 }
 
+/* Home page buttons */
 .Explorebox__Button {
   color: white;
   border: none;
@@ -195,7 +196,7 @@ main {
   height: 30px;
   position: absolute;
   top: 12px;
-  right: 4px;
+  right: 8px;
   background-color: #99E2D0;
   color: #008766;
 }
@@ -237,6 +238,7 @@ main {
   margin-bottom: 17px;
 }
 
+/* Menu pages buttons */
 .Locationbox {
   background-color: #eaeaea;
   color: #353535;
@@ -317,4 +319,24 @@ main {
   width: 100%;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.container {
+  height: 265px;
+  width: 100%;
+  z-index: -1;
+}
+
+.container__image {
+  height: 100%;
+  width: 100%;
+}
+
+.Menu {
+  z-index: 1;
+  background-color: #FFFFFF;
+  margin-top: -45px;
+  padding-top: 40px;
+  width: 100%;
+  border-radius: 35px;
 }

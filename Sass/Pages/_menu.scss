@@ -1,0 +1,19 @@
+.container {
+    height: 265px;
+    width: 100%;
+    z-index: -1;
+    &__image
+    {
+        height: 100%;
+        width: 100%;
+    }
+}
+.Menu
+{
+    z-index: 1;
+    background-color: $color-light;
+    margin-top: -45px;
+    padding-top: 40px;
+    width: 100%;
+    border-radius: 35px;
+}
