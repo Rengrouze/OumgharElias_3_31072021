@@ -3,11 +3,12 @@
     width: 100%;
     text-align: center;
     height: 63px;
+    position: relative;
     &__arrow
     {
         position: absolute;
         left: 8%;
-        top: 31.5px;
+        top: 22px;
         font-size: 1.3em;
         color: $color-dark;
     }

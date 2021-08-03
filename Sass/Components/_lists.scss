@@ -1,0 +1,72 @@
+.Restaurantsbox__List__Cards
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 89%;
+    height: 252px;
+    box-shadow: 0.1px 0.1px 0.1px 0.1px $color-locationbox;
+    border: $color-locationbox 0.1px solid;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: $color-light;
+    &__imageframe
+    {
+        display: block;
+        height: 175px;
+        overflow: hidden;
+        position: relative;
+        &__image
+        {
+            width: 100%;
+            height: auto;
+        }
+        &__newbox
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 30px;
+            position: absolute;
+            top: 12px;
+            right: 8px;
+            background-color: $color-tertiary;
+            color: $color-tertiarytext;
+        }
+    }
+    &__titlebox
+    {
+        height: 69px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 8px;
+        padding-right: 8px;
+        &__onlytext
+        {
+                text-decoration: none;
+                color: black;
+                display: block;
+                flex-direction: column;
+            &__title
+            {
+                font-size: 1.2em;
+                font-weight: bold;
+                margin-top: 17px;
+                margin-bottom: 4px;
+            }
+            &__location
+            {
+                margin-top: 4px;
+                margin-bottom: 17px;
+            }
+        }
+    }
+}
+/* Menu list*/
+.Menu__content__section ul
+{
+    @include list-box;
+}

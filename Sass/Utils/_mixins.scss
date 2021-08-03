@@ -13,3 +13,10 @@
         margin-bottom: auto;
     }
 }
+
+@mixin underline /*underline block*/
+{
+    width: 10%;
+    height: 3px;
+    background-color: $color-tertiary;
+}

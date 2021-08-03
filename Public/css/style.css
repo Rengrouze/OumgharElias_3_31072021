@@ -9,12 +9,13 @@
   width: 100%;
   text-align: center;
   height: 63px;
+  position: relative;
 }
 
 .header__arrow {
   position: absolute;
   left: 8%;
-  top: 31.5px;
+  top: 22px;
   font-size: 1.3em;
   color: #000000;
 }
@@ -83,6 +84,8 @@ main {
 
 .Logo--header {
   width: 100%;
+  line-height: 63px;
+  margin: 0;
 }
 
 .Logo--footer {
@@ -122,8 +125,6 @@ main {
   margin-bottom: 21.5px;
   border-radius: 20px;
   background: #f6f6f6;
-  -webkit-box-shadow: 1px 1px 1px 1px #eaeaea;
-          box-shadow: 1px 1px 1px 1px #eaeaea;
   font-size: 1em;
   font-weight: bold;
   position: relative;
@@ -157,17 +158,20 @@ main {
   background: #f5edff;
 }
 
+/* Menu pages buttons */
 .Restaurantsbox__List__Cards {
   margin-left: auto;
   margin-right: auto;
   width: 89%;
   height: 252px;
-  -webkit-box-shadow: 1px 1px 1px 1px #eaeaea;
-          box-shadow: 1px 1px 1px 1px #eaeaea;
+  -webkit-box-shadow: 0.1px 0.1px 0.1px 0.1px #eaeaea;
+          box-shadow: 0.1px 0.1px 0.1px 0.1px #eaeaea;
+  border: #eaeaea 0.1px solid;
   margin-top: 8px;
   margin-bottom: 8px;
   border-radius: 10px;
   overflow: hidden;
+  background-color: #FFFFFF;
 }
 
 .Restaurantsbox__List__Cards__imageframe {
@@ -238,7 +242,21 @@ main {
   margin-bottom: 17px;
 }
 
-/* Menu pages buttons */
+/* Menu list*/
+.Menu__content__section ul__title {
+  margin-left: 5%;
+  margin-top: 50px;
+}
+
+.Menu__content__section ul ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/*buttons of the lists are on the buttons.scss file*/
 .Locationbox {
   background-color: #eaeaea;
   color: #353535;
@@ -351,7 +369,32 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 18px;
+  padding-right: 40px;
+}
+
+.Menu__header__title {
   font-family: 'Shrikhand', cursive;
+  font-size: 1.8em;
+}
+
+.Menu__header__heart {
+  font-size: 1.9em;
+}
+
+.Menu__content {
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Menu__content__section__title {
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.Menu__content__section__underline {
+  width: 10%;
+  height: 3px;
+  background-color: #99E2D0;
 }
