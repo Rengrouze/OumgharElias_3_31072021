@@ -83,7 +83,7 @@
         margin-top: 8px;
         margin-bottom: 8px;
         border-radius: 10px;
-        box-shadow: 1px 1px 1px 1px $color-locationbox;
+        box-shadow: $color-locationbox 10px 10px 10px;
         padding-left: 10px;
         &__textbox
         {

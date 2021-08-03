@@ -130,6 +130,8 @@ main {
   margin-bottom: 21.5px;
   border-radius: 20px;
   background: #f6f6f6;
+  -webkit-box-shadow: #eaeaea 10px 10px 10px;
+          box-shadow: #eaeaea 10px 10px 10px;
   font-size: 1em;
   font-weight: bold;
   position: relative;
@@ -284,8 +286,8 @@ main {
   margin-top: 8px;
   margin-bottom: 8px;
   border-radius: 10px;
-  -webkit-box-shadow: 1px 1px 1px 1px #eaeaea;
-          box-shadow: 1px 1px 1px 1px #eaeaea;
+  -webkit-box-shadow: #eaeaea 10px 10px 10px;
+          box-shadow: #eaeaea 10px 10px 10px;
   padding-left: 10px;
 }
 
