@@ -160,17 +160,81 @@ main {
   margin-left: auto;
   margin-right: auto;
   width: 89%;
+  height: 252px;
+  -webkit-box-shadow: 1px 1px 1px 1px #eaeaea;
+          box-shadow: 1px 1px 1px 1px #eaeaea;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .Restaurantsbox__List__Cards__imageframe {
   display: block;
   height: 175px;
   overflow: hidden;
+  position: relative;
 }
 
 .Restaurantsbox__List__Cards__imageframe__image {
   width: 100%;
   height: auto;
+}
+
+.Restaurantsbox__List__Cards__imageframe__newbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80px;
+  height: 30px;
+  position: absolute;
+  top: 12px;
+  right: 4px;
+  background-color: #99E2D0;
+  color: #008766;
+}
+
+.Restaurantsbox__List__Cards__titlebox {
+  height: 69px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.Restaurantsbox__List__Cards__titlebox__onlytext {
+  text-decoration: none;
+  color: black;
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Restaurantsbox__List__Cards__titlebox__onlytext__title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 17px;
+  margin-bottom: 4px;
+}
+
+.Restaurantsbox__List__Cards__titlebox__onlytext__location {
+  margin-top: 4px;
+  margin-bottom: 17px;
 }
 
 .Locationbox {
@@ -239,6 +303,7 @@ main {
 .Restaurantsbox {
   background-color: #f6f6f6;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .Restaurantsbox__title {
