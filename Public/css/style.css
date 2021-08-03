@@ -323,6 +323,15 @@ main {
   color: #FFFFFF;
 }
 
+.Menu__content__section__food__checked__box {
+  width: 19px;
+  height: 19px;
+}
+
+.Menu__content__section__food__checked__box__i {
+  font-size: 19px;
+}
+
 /*buttons of the lists are on the buttons.scss file*/
 .Locationbox {
   background-color: #eaeaea;

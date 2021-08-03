@@ -124,6 +124,15 @@
             height: 100%;
             width: 58px;
             color: $color-light;
+            &__box
+            {
+                width: 19px;
+                height: 19px;
+                &__i
+                {
+                    font-size: 19px;
+                } 
+            }
         }
     }
 }
