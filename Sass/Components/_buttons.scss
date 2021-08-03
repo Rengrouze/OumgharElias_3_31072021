@@ -1,5 +1,4 @@
-@mixin buttonexplore
-{
+.Explorebox__Button{
     color: white;
     border: none;
     border-radius: 50px;
@@ -9,7 +8,7 @@
     font-size: 0.9em;
     font-weight: bolder;
 }
-@mixin buttonstep
+.Howtobox__Step
 {
     display: flex;
     align-items: center;
@@ -24,6 +23,7 @@
     background: $color-background;
     box-shadow: 1px 1px 1px 1px $color-locationbox;
     font-size: 1em;
+    font-weight: bold;
     position: relative;
     &__number
     {
@@ -50,4 +50,9 @@
             color: $color-primary;
         }
     }
+    &--markup
+    {
+        background: $color-Howtobutton3;
+    }
 }
+

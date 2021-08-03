@@ -25,10 +25,6 @@
         width: 75%;
         color: $color-subtitle;
     }
-    &__Button
-    {
-        @include buttonexplore();
-    }
 }
 .Howtobox
 {
@@ -37,25 +33,11 @@
     background-color: $color-light;
     display: flex;
     flex-direction: column;
-    &__title
-    {
-        margin-left: 5%;
-        margin-top: 50px;
-    }
-    ul{
-        list-style-type: none;
-        padding: 0;
-        width: 100%;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-    &__Step
-    {
-        @include buttonstep();
-    }
+    @include list-box;
 }
 .Restaurantsbox
 {
     background-color: $color-background;
     width: 100%;
+    @include list-box;
 }
