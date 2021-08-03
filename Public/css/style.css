@@ -156,6 +156,23 @@ main {
   background: #f5edff;
 }
 
+.Restaurantsbox__List__Cards {
+  margin-left: auto;
+  margin-right: auto;
+  width: 89%;
+}
+
+.Restaurantsbox__List__Cards__imageframe {
+  display: block;
+  height: 175px;
+  overflow: hidden;
+}
+
+.Restaurantsbox__List__Cards__imageframe__image {
+  width: 100%;
+  height: auto;
+}
+
 .Locationbox {
   background-color: #eaeaea;
   color: #353535;

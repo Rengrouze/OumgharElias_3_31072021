@@ -55,4 +55,22 @@
         background: $color-Howtobutton3;
     }
 }
+.Restaurantsbox__List__Cards
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 89%;
+    &__imageframe
+    {
+        display: block;
+        
+        height: 175px;
+        overflow: hidden;
+        &__image
+        {
+            width: 100%;
+            height: auto;
+        }
 
+    }
+}
