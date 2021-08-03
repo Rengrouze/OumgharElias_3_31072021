@@ -12,6 +12,11 @@
   position: relative;
 }
 
+.header--shadow {
+  -webkit-box-shadow: #7e7e7e 0px 0px 10px 0px;
+          box-shadow: #7e7e7e 0px 0px 10px 0px;
+}
+
 .header__arrow {
   position: absolute;
   left: 8%;
