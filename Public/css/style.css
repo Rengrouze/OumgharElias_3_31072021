@@ -243,17 +243,68 @@ main {
 }
 
 /* Menu list*/
-.Menu__content__section ul__title {
-  margin-left: 5%;
-  margin-top: 50px;
-}
-
-.Menu__content__section ul ul {
+.Menu__content__section ul {
   list-style-type: none;
   padding: 0;
   width: 100%;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.Menu__content__section__food {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FFFFFF;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  height: 68px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 1px 1px #eaeaea;
+          box-shadow: 1px 1px 1px 1px #eaeaea;
+  padding-left: 10px;
+}
+
+.Menu__content__section__food__textbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.Menu__content__section__food__textbox__title {
+  font-size: 1.2em;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.Menu__content__section__food__textbox__description {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  width: 222px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.Menu__content__section__food__textbox__price {
+  position: absolute;
+  margin: 0%;
+  right: 23px;
+  bottom: 15px;
+  font-size: 0.8em;
 }
 
 /*buttons of the lists are on the buttons.scss file*/
@@ -352,7 +403,7 @@ main {
 
 .Menu {
   z-index: 1;
-  background-color: #FFFFFF;
+  background-color: #f6f6f6;
   margin-top: -45px;
   padding-top: 10px;
   width: 100%;

@@ -34,12 +34,12 @@
     background-color: $color-light;
     display: flex;
     flex-direction: column;
-    @include list-box;
+    @include list-box-home;
 }
 .Restaurantsbox
 {
     background-color: $color-background;
     width: 100%;
     margin-bottom: 30px;
-    @include list-box;
+    @include list-box-home;
 }

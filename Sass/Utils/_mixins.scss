@@ -1,4 +1,4 @@
-@mixin list-box
+@mixin list-box-home
 {
     &__title
     {
@@ -6,12 +6,15 @@
         margin-top: 50px;
     }
     ul{
-        list-style-type: none;
+        @include list-style-type-none()
+    }
+}
+@mixin list-style-type-none {
+    list-style-type: none;
         padding: 0;
         width: 100%;
         margin-top: auto;
         margin-bottom: auto;
-    }
 }
 
 @mixin underline /*underline block*/
