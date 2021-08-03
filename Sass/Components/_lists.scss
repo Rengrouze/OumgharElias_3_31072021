@@ -68,52 +68,62 @@
 /* Menu list*/
 .Menu__content__section
 {
-   & ul
-   {
-       @include list-style-type-none;
-   }
-   &__food
-   {
-       display: flex;
-       background-color: $color-light;
-       justify-content: space-between;
-       align-items: center;
-       overflow: hidden;
-       height: 68px;
-       margin-top: 8px;
-       margin-bottom: 8px;
-       border-radius: 10px;
-       box-shadow: 1px 1px 1px 1px $color-locationbox;
-       padding-left: 10px;
-    &__textbox
+    & ul
+    {
+        @include list-style-type-none;
+    }
+    &__food
     {
         display: flex;
-        flex-direction: column;
-        position: relative;
-        width: 100%;
-        &__title
+        background-color: $color-light;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        height: 68px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px 1px $color-locationbox;
+        padding-left: 10px;
+        &__textbox
         {
-            font-size: 1.2em;
-            margin-top: 2px;
-            margin-bottom: 2px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 100%;
+            &__title
+            {
+                font-size: 1.2em;
+                margin-top: 2px;
+                margin-bottom: 2px;
+            }
+            &__description
+            {
+                margin-top: 2px;
+                margin-bottom: 2px;
+                width: 222px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            &__price
+            {
+                position: absolute;
+                margin: 0%;
+                right: 23px;
+                bottom: 5px;
+                font-size: 0.8em;
+            }
         }
-        &__description
+        &__checked
         {
-            margin-top: 2px;
-            margin-bottom: 2px;
-            width: 222px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-        &__price
-        {
-            position: absolute;
-            margin: 0%;
-            right: 23px;
-            bottom: 15px;
-            font-size: 0.8em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-tertiary;
+            height: 100%;
+            width: 58px;
+            color: $color-light;
         }
     }
-   }
 }
