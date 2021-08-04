@@ -591,8 +591,8 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 18px;
-  padding-right: 40px;
+  padding-left: 4.8%;
+  padding-right: 10%;
 }
 
 .Menu__header__title {
