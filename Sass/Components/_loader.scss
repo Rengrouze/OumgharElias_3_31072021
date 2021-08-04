@@ -1,25 +1,6 @@
-$sidedot:  $color-secondary;
-$centraldot: $color-tertiary;
-$loadersize: 48px;
-
-@keyframes opacity {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-
-}
-@keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
 .Loaderbox {
     height: 100%;
     width: 100%;
-    z-index: 9999;
     background-color: white;
     position: fixed;
     display: flex;
@@ -38,7 +19,7 @@ $loadersize: 48px;
         box-shadow: -$loadersize/2 0, $loadersize/2 0;
         animation: rotation 2s ease-in-out infinite;
       }
-      & h1 
+      & h1
       {
           margin-top: 50px;
           font-family: 'Shrikhand';
