@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    animation: opacity 1s 3s reverse ease-in-out both ;
+    animation: opacity 1s 1s reverse ease-in-out both ;
     &__spiner {
         width : $loadersize/3;
         height: $loadersize/3;

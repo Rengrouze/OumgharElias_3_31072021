@@ -149,7 +149,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  animation: opacity 1s 3s reverse ease-in-out both;
+  animation: opacity 1s 1s reverse ease-in-out both;
 }
 
 .Loaderbox__spiner {
@@ -381,6 +381,21 @@ main {
   padding-left: 10px;
 }
 
+.Menu__content__section__food:active .Menu__content__section__food__checked {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.Menu__content__section__food:active .Menu__content__section__food__textbox__price {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.Menu__content__section__food:active .Menu__content__section__food__checked__box {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
 .Menu__content__section__food__textbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -418,6 +433,12 @@ main {
   right: 23px;
   bottom: 5px;
   font-size: 0.8em;
+  -webkit-transform: translateX(58px);
+          transform: translateX(58px);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
 .Menu__content__section__food__checked {
@@ -434,11 +455,23 @@ main {
   height: 100%;
   width: 58px;
   color: #FFFFFF;
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  -webkit-transform: translateX(58px);
+          transform: translateX(58px);
 }
 
 .Menu__content__section__food__checked__box {
   width: 19px;
   height: 19px;
+  -webkit-transition: -webkit-transform 400ms 100ms ease-in-out;
+  transition: -webkit-transform 400ms 100ms ease-in-out;
+  transition: transform 400ms 100ms ease-in-out;
+  transition: transform 400ms 100ms ease-in-out, -webkit-transform 400ms 100ms ease-in-out;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 .Menu__content__section__food__checked__box__i {

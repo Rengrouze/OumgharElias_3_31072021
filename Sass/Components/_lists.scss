@@ -85,6 +85,18 @@
         border-radius: 10px;
         box-shadow: $color-locationbox 10px 10px 10px;
         padding-left: 10px;
+        &:active .Menu__content__section__food__checked
+        {
+            transform: translateX(0px);
+        }
+        &:active .Menu__content__section__food__textbox__price
+        {
+            transform: translateX(0px);
+        }
+        &:active .Menu__content__section__food__checked__box
+        {
+            transform: rotate(360deg);
+        }
         &__textbox
         {
             display: flex;
@@ -117,6 +129,8 @@
                 right: 23px;
                 bottom: 5px;
                 font-size: 0.8em;
+                transform: translateX(58px);
+                transition: transform 300ms ease-in-out;
             }
         }
         &__checked
@@ -128,14 +142,18 @@
             height: 100%;
             width: 58px;
             color: $color-light;
+            transition: transform 300ms ease-in-out;
+            transform: translateX(58px);
             &__box
             {
                 width: 19px;
                 height: 19px;
+                transition: transform 400ms 100ms ease-in-out;
+                transform: rotate(0deg);
                 &__i
                 {
                     font-size: 19px;
-                } 
+                }
             }
         }
     }
