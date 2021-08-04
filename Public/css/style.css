@@ -307,6 +307,10 @@ main {
   font-size: 1.2em;
   margin-top: 2px;
   margin-bottom: 2px;
+  width: 222px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .Menu__content__section__food__textbox__description {
