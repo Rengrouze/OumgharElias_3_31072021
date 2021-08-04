@@ -83,6 +83,89 @@ main {
   font-family: 'Roboto';
 }
 
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.Loaderbox {
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  background-color: white;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  animation: opacity 1s 3s reverse ease-in-out both;
+}
+
+.Loaderbox__spiner {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  background: #99E2D0;
+  color: #FF79DA;
+  -webkit-box-shadow: -24px 0, 24px 0;
+          box-shadow: -24px 0, 24px 0;
+  -webkit-animation: rotation 2s ease-in-out infinite;
+          animation: rotation 2s ease-in-out infinite;
+}
+
+.Loaderbox h1 {
+  margin-top: 50px;
+  font-family: 'Shrikhand';
+  width: 70%;
+  text-align: center;
+}
+
 .Logo {
   font-family: 'Shrikhand', cursive;
 }
