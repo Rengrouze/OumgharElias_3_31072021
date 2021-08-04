@@ -85,15 +85,15 @@
         border-radius: 10px;
         box-shadow: $color-locationbox 10px 10px 10px;
         padding-left: 10px;
-        &:active .Menu__content__section__food__checked
+        &:hover .Menu__content__section__food__checked
         {
             transform: translateX(0px);
         }
-        &:active .Menu__content__section__food__textbox__price
+        &:hover .Menu__content__section__food__textbox__price
         {
             transform: translateX(0px);
         }
-        &:active .Menu__content__section__food__checked__box
+        &:hover .Menu__content__section__food__checked__box
         {
             transform: rotate(360deg);
         }

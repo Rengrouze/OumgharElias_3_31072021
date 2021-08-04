@@ -381,17 +381,17 @@ main {
   padding-left: 10px;
 }
 
-.Menu__content__section__food:active .Menu__content__section__food__checked {
+.Menu__content__section__food:hover .Menu__content__section__food__checked {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
 }
 
-.Menu__content__section__food:active .Menu__content__section__food__textbox__price {
+.Menu__content__section__food:hover .Menu__content__section__food__textbox__price {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
 }
 
-.Menu__content__section__food:active .Menu__content__section__food__checked__box {
+.Menu__content__section__food:hover .Menu__content__section__food__checked__box {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
