@@ -400,45 +400,55 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.Menu__content__section__food__textbox__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
-  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-.Menu__content__section__food__textbox__title {
+.Menu__content__section__food__textbox__name__title {
   font-size: 1.2em;
   margin-top: 2px;
   margin-bottom: 2px;
-  width: 222px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
-.Menu__content__section__food__textbox__description {
+.Menu__content__section__food__textbox__name__description {
   margin-top: 2px;
   margin-bottom: 2px;
-  width: 222px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
-.Menu__content__section__food__textbox__price {
-  position: absolute;
-  margin: 0%;
-  right: 23px;
-  bottom: 5px;
+.Menu__content__section__food__textbox__pricebox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+}
+
+.Menu__content__section__food__textbox__pricebox__price {
   font-size: 0.8em;
-  -webkit-transform: translateX(58px);
-          transform: translateX(58px);
-  -webkit-transition: -webkit-transform 300ms ease-in-out;
-  transition: -webkit-transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
 .Menu__content__section__food__checked {
@@ -455,23 +465,11 @@ main {
   height: 100%;
   width: 58px;
   color: #FFFFFF;
-  -webkit-transition: -webkit-transform 300ms ease-in-out;
-  transition: -webkit-transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
-  -webkit-transform: translateX(58px);
-          transform: translateX(58px);
 }
 
 .Menu__content__section__food__checked__box {
   width: 19px;
   height: 19px;
-  -webkit-transition: -webkit-transform 400ms 100ms ease-in-out;
-  transition: -webkit-transform 400ms 100ms ease-in-out;
-  transition: transform 400ms 100ms ease-in-out;
-  transition: transform 400ms 100ms ease-in-out, -webkit-transform 400ms 100ms ease-in-out;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
 }
 
 .Menu__content__section__food__checked__box__i {
