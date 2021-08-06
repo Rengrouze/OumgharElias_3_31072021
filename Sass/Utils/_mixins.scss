@@ -72,3 +72,28 @@
       background-image: url("../../Public/Image/Restaurants/Le_delice_des_sens_small.jpg");
    }
 }
+@mixin like {
+   position: relative;
+   &__empty {
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: opacity 0.2s ease-in-out;
+   }
+   &__bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+      background: linear-gradient($color-primary, $color-secondary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+   }
+}

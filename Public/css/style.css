@@ -523,6 +523,47 @@ main {
   margin-bottom: 17px;
 }
 
+.Restaurantsbox__List__Cards__titlebox__heart {
+  height: 16px;
+  width: 16px;
+  position: relative;
+}
+
+.Restaurantsbox__List__Cards__titlebox__heart:hover .Restaurantsbox__List__Cards__titlebox__heart__empty {
+  opacity: 0;
+}
+
+.Restaurantsbox__List__Cards__titlebox__heart:hover .Restaurantsbox__List__Cards__titlebox__heart__bg {
+  opacity: 1;
+}
+
+.Restaurantsbox__List__Cards__titlebox__heart__empty {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.Restaurantsbox__List__Cards__titlebox__heart__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* Menu list*/
 .Menu__content__section ul {
   list-style-type: none;
@@ -544,6 +585,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  cursor: pointer;
   height: 68px;
   width: 100%;
   margin-left: auto;
@@ -812,6 +854,44 @@ main {
 
 .Menu__header__heart {
   font-size: 1.9em;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.Menu__header__heart:hover .Menu__header__heart__empty {
+  opacity: 0;
+}
+
+.Menu__header__heart:hover .Menu__header__heart__bg {
+  opacity: 1;
+}
+
+.Menu__header__heart__empty {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.Menu__header__heart__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .Menu__content {
