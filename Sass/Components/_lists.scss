@@ -73,7 +73,7 @@
       }
    }
    &__titlebox {
-      height: 69px;
+      height: 77px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -82,17 +82,18 @@
       &__onlytext {
          text-decoration: none;
          color: black;
-         display: block;
+         display: flex;
+         height: 100%;
          flex-direction: column;
          &__title {
             font-size: 1.2em;
             font-weight: bold;
-            margin-top: 17px;
-            margin-bottom: 4px;
+            margin-bottom: auto;
+            margin-top: auto;
          }
          &__location {
-            margin-top: 4px;
-            margin-bottom: 17px;
+            margin-top: auto;
+            margin-bottom: auto;
          }
       }
       &__heart {
@@ -180,7 +181,7 @@
             justify-content: flex-end;
             flex-shrink: 0;
             height: 100%;
-            margin-right: 5px;
+            margin-right: 5%;
 
             &__price {
                font-size: 0.8em;

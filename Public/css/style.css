@@ -399,19 +399,43 @@ main {
 }
 
 .Restaurantsbox__List__Cards__imageframe--palette {
-  background-image: url("../../Public/Image/Restaurants/La_palette_du_gout_small.jpg");
+  background-image: url("../../Public/Image/Restaurants/La_palette_du_gout.jpg");
+}
+
+@media (max-width: 768px) {
+  .Restaurantsbox__List__Cards__imageframe--palette {
+    background-image: url("../../Public/Image/Restaurants/La_palette_du_gout_small.jpg");
+  }
 }
 
 .Restaurantsbox__List__Cards__imageframe--france {
-  background-image: url("../../Public/Image/Restaurants/a_la_francaise_small.jpg");
+  background-image: url("../../Public/Image/Restaurants/a_la_francaise.jpg");
+}
+
+@media (max-width: 768px) {
+  .Restaurantsbox__List__Cards__imageframe--france {
+    background-image: url("../../Public/Image/Restaurants/a_la_francaise_small.jpg");
+  }
 }
 
 .Restaurantsbox__List__Cards__imageframe--note {
-  background-image: url("../../Public/Image/Restaurants/La_note_enchantee_small.jpg");
+  background-image: url("../../Public/Image/Restaurants/La_note_enchantee.jpg");
+}
+
+@media (max-width: 768px) {
+  .Restaurantsbox__List__Cards__imageframe--note {
+    background-image: url("../../Public/Image/Restaurants/La_note_enchantee_small.jpg");
+  }
 }
 
 .Restaurantsbox__List__Cards__imageframe--delice {
-  background-image: url("../../Public/Image/Restaurants/Le_delice_des_sens_small.jpg");
+  background-image: url("../../Public/Image/Restaurants/Le_delice_des_sens.jpg");
+}
+
+@media (max-width: 768px) {
+  .Restaurantsbox__List__Cards__imageframe--delice {
+    background-image: url("../../Public/Image/Restaurants/Le_delice_des_sens_small.jpg");
+  }
 }
 
 .Restaurantsbox__List__Cards__imageframe__newbox {
@@ -434,7 +458,7 @@ main {
 }
 
 .Restaurantsbox__List__Cards__titlebox {
-  height: 69px;
+  height: 77px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -451,7 +475,10 @@ main {
 .Restaurantsbox__List__Cards__titlebox__onlytext {
   text-decoration: none;
   color: black;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -461,13 +488,13 @@ main {
 .Restaurantsbox__List__Cards__titlebox__onlytext__title {
   font-size: 1.2em;
   font-weight: bold;
-  margin-top: 17px;
-  margin-bottom: 4px;
+  margin-bottom: auto;
+  margin-top: auto;
 }
 
 .Restaurantsbox__List__Cards__titlebox__onlytext__location {
-  margin-top: 4px;
-  margin-bottom: 17px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .Restaurantsbox__List__Cards__titlebox__heart {
@@ -507,8 +534,6 @@ main {
   transition: opacity 0.2s ease-in-out;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background: linear-gradient(#9356dc, #ff79da);
-  background-clip: text;
-  /* Warning: background-clip isn't authorized by the CSS Validator, it's normal, the correct way to do is to use the prefix -webkit- but i use both for compatibility */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -633,7 +658,7 @@ main {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   height: 100%;
-  margin-right: 5px;
+  margin-right: 5%;
 }
 
 .Menu__content__section__food__textbox__pricebox__price {
@@ -801,19 +826,43 @@ main {
 }
 
 .container--palette {
-  background-image: url("../../Public/Image/Restaurants/La_palette_du_gout_small.jpg");
+  background-image: url("../../Public/Image/Restaurants/La_palette_du_gout.jpg");
+}
+
+@media (max-width: 768px) {
+  .container--palette {
+    background-image: url("../../Public/Image/Restaurants/La_palette_du_gout_small.jpg");
+  }
 }
 
 .container--france {
-  background-image: url("../../Public/Image/Restaurants/a_la_francaise_small.jpg");
+  background-image: url("../../Public/Image/Restaurants/a_la_francaise.jpg");
+}
+
+@media (max-width: 768px) {
+  .container--france {
+    background-image: url("../../Public/Image/Restaurants/a_la_francaise_small.jpg");
+  }
 }
 
 .container--note {
-  background-image: url("../../Public/Image/Restaurants/La_note_enchantee_small.jpg");
+  background-image: url("../../Public/Image/Restaurants/La_note_enchantee.jpg");
+}
+
+@media (max-width: 768px) {
+  .container--note {
+    background-image: url("../../Public/Image/Restaurants/La_note_enchantee_small.jpg");
+  }
 }
 
 .container--delice {
-  background-image: url("../../Public/Image/Restaurants/Le_delice_des_sens_small.jpg");
+  background-image: url("../../Public/Image/Restaurants/Le_delice_des_sens.jpg");
+}
+
+@media (max-width: 768px) {
+  .container--delice {
+    background-image: url("../../Public/Image/Restaurants/Le_delice_des_sens_small.jpg");
+  }
 }
 
 .Menu {
@@ -882,8 +931,6 @@ main {
   transition: opacity 0.2s ease-in-out;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background: linear-gradient(#9356dc, #ff79da);
-  background-clip: text;
-  /* Warning: background-clip isn't authorized by the CSS Validator, it's normal, the correct way to do is to use the prefix -webkit- but i use both for compatibility */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

@@ -73,16 +73,28 @@
 /* if you want to add a restaurant, this is where you should add its image and add the correct modifier name*/
 @mixin restaurantclass {
    &--palette {
-      background-image: url("../../Public/Image/Restaurants/La_palette_du_gout_small.jpg");
+      background-image: url("../../Public/Image/Restaurants/La_palette_du_gout.jpg");
+      @media (max-width: 768px) {
+         background-image: url("../../Public/Image/Restaurants/La_palette_du_gout_small.jpg");
+      }
    }
    &--france {
-      background-image: url("../../Public/Image/Restaurants/a_la_francaise_small.jpg");
+      background-image: url("../../Public/Image/Restaurants/a_la_francaise.jpg");
+      @media (max-width: 768px) {
+         background-image: url("../../Public/Image/Restaurants/a_la_francaise_small.jpg");
+      }
    }
    &--note {
-      background-image: url("../../Public/Image/Restaurants/La_note_enchantee_small.jpg");
+      background-image: url("../../Public/Image/Restaurants/La_note_enchantee.jpg");
+      @media (max-width: 768px) {
+         background-image: url("../../Public/Image/Restaurants/La_note_enchantee_small.jpg");
+      }
    }
    &--delice {
-      background-image: url("../../Public/Image/Restaurants/Le_delice_des_sens_small.jpg");
+      background-image: url("../../Public/Image/Restaurants/Le_delice_des_sens.jpg");
+      @media (max-width: 768px) {
+         background-image: url("../../Public/Image/Restaurants/Le_delice_des_sens_small.jpg");
+      }
    }
 }
 
@@ -108,7 +120,6 @@
       opacity: 0;
       transition: opacity 0.2s ease-in-out;
       background: linear-gradient($color-primary, $color-secondary);
-      background-clip: text; /* Warning: background-clip isn't authorized by the CSS Validator, it's normal, the correct way to do is to use the prefix -webkit- but i use both for compatibility */
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
    }
