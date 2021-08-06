@@ -1,59 +1,59 @@
 .container {
-    height: 265px;
-    width: 100%;
-    z-index: -1;
-    @include images;
-    @include restaurantclass;
+   height: 265px;
+   width: 100%;
+   z-index: -1;
+   @include images;
+   @include restaurantclass;
 }
-.Menu
-{
-    z-index: 1;
-    background-color: $color-background;
-    margin-top: -45px;
-    padding-top: 10px;
-    width: 100%;
-    border-radius: 35px 35px 0 0;
-    &__header
-    {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-left: 4.8%;
-        padding-right: 10%;
-        &__title
-        {
-            font-family: 'Shrikhand', cursive;
-            font-size: 1.8em;
-        }
-        &__heart
-        {
-            font-size: 1.9em;
-        }
-    }
-    &__content
-    {
-        width: 92%;
-        margin-left: auto;
-        margin-right: auto;
-        &__section
-        {
-            width: 100%;
-            &__title
-            {
-                font-weight: 400;
-                margin-bottom: 8px;
-            }
-            &__underline
-            {
-                @include underline;
-            }
-        }
-    }
-    &__footer
-    {
-        height: 150px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.Menu {
+   z-index: 1;
+   background-color: $color-background;
+   margin-top: -45px;
+   padding-top: 10px;
+   width: 100%;
+   border-radius: 35px 35px 0 0;
+   &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 4.8%;
+      padding-right: 10%;
+      &__title {
+         font-family: "Shrikhand", cursive;
+         font-size: 1.8em;
+      }
+      &__heart {
+         font-size: 1.9em;
+      }
+   }
+   &__content {
+      width: 92%;
+      margin-left: auto;
+      margin-right: auto;
+      &__section {
+         width: 100%;
+         &--starters {
+            animation: menuloadsection 1s 400ms ease-in-out both;
+         }
+         &--main {
+            animation: menuloadsection 1s 600ms ease-in-out both;
+         }
+         &--dessert {
+            animation: menuloadsection 1s 800ms ease-in-out both;
+         }
+         &__title {
+            font-weight: 400;
+            margin-bottom: 8px;
+         }
+         &__underline {
+            @include underline;
+         }
+      }
+   }
+   &__footer {
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
 }

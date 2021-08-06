@@ -3,6 +3,7 @@
 /* color pallet*/
 /*size*/
 /*End of loader values */
+/* value for animation delay */
 /* loader */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
@@ -126,6 +127,32 @@
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes menuloadsection {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes menuloadsection {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
@@ -477,23 +504,23 @@ main {
 }
 
 .Menu__content__section__food:hover .Menu__content__section__food__checked {
-  -webkit-animation: checkin 400ms ease-in-out both;
-          animation: checkin 400ms ease-in-out both;
+  -webkit-animation: checkin 0.4s ease-in-out both;
+          animation: checkin 0.4s ease-in-out both;
 }
 
 .Menu__content__section__food:hover .Menu__content__section__food__checked__box {
-  -webkit-animation: rotate_checkin 400ms 200ms ease-in-out both;
-          animation: rotate_checkin 400ms 200ms ease-in-out both;
+  -webkit-animation: rotate_checkin 0.4s 200ms ease-in-out both;
+          animation: rotate_checkin 0.4s 200ms ease-in-out both;
 }
 
 .Menu__content__section__food:not(:hover) .Menu__content__section__food__checked {
-  -webkit-animation: checkout 400ms ease-in-out both;
-          animation: checkout 400ms ease-in-out both;
+  -webkit-animation: checkout 0.4s ease-in-out both;
+          animation: checkout 0.4s ease-in-out both;
 }
 
 .Menu__content__section__food:not(:hover) .Menu__content__section__food__checked__box {
-  -webkit-animation: rotate_checkout 400ms 200ms ease-in-out both;
-          animation: rotate_checkout 400ms 200ms ease-in-out both;
+  -webkit-animation: rotate_checkout 0.4s 200ms ease-in-out both;
+          animation: rotate_checkout 0.4s 200ms ease-in-out both;
 }
 
 .Menu__content__section__food__textbox {
@@ -727,7 +754,7 @@ main {
 }
 
 .Menu__header__title {
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
   font-size: 1.8em;
 }
 
@@ -743,6 +770,21 @@ main {
 
 .Menu__content__section {
   width: 100%;
+}
+
+.Menu__content__section--starters {
+  -webkit-animation: menuloadsection 1s 400ms ease-in-out both;
+          animation: menuloadsection 1s 400ms ease-in-out both;
+}
+
+.Menu__content__section--main {
+  -webkit-animation: menuloadsection 1s 600ms ease-in-out both;
+          animation: menuloadsection 1s 600ms ease-in-out both;
+}
+
+.Menu__content__section--dessert {
+  -webkit-animation: menuloadsection 1s 800ms ease-in-out both;
+          animation: menuloadsection 1s 800ms ease-in-out both;
 }
 
 .Menu__content__section__title {

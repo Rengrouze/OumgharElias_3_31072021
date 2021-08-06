@@ -74,16 +74,16 @@
       border-radius: 10px;
       box-shadow: $color-shadow 1px 1px 1px 1px;
       &:hover .Menu__content__section__food__checked {
-         animation: checkin 400ms ease-in-out both;
+         animation: checkin $checktime ease-in-out both;
       }
       &:hover .Menu__content__section__food__checked__box {
-         animation: rotate_checkin 400ms 200ms ease-in-out both;
+         animation: rotate_checkin $checktime 200ms ease-in-out both;
       }
       &:not(:hover) .Menu__content__section__food__checked {
-         animation: checkout 400ms ease-in-out both;
+         animation: checkout $checktime ease-in-out both;
       }
       &:not(:hover) .Menu__content__section__food__checked__box {
-         animation: rotate_checkout 400ms 200ms ease-in-out both;
+         animation: rotate_checkout $checktime 200ms ease-in-out both;
       }
       &__textbox {
          display: flex;
