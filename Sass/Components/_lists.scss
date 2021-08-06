@@ -1,162 +1,153 @@
-.Restaurantsbox__List__Cards
-{
-    margin-left: auto;
-    margin-right: auto;
-    width: 89%;
-    height: 252px;
-    box-shadow: 0.1px 0.1px 0.1px 0.1px $color-locationbox;
-    border: $color-locationbox 0.1px solid;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: $color-light;
-    &__imageframe
-    {
-        display: block;
-        height: 175px;
-        overflow: hidden;
-        position: relative;
-        &__image
-        {
-            width: 100%;
-            height: auto;
-        }
-        &__newbox
-        {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 80px;
-            height: 30px;
-            position: absolute;
-            top: 12px;
-            right: 8px;
-            background-color: $color-tertiary;
-            color: $color-tertiarytext;
-        }
-    }
-    &__titlebox
-    {
-        height: 69px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 8px;
-        padding-right: 8px;
-        &__onlytext
-        {
-                text-decoration: none;
-                color: black;
-                display: block;
-                flex-direction: column;
-            &__title
-            {
-                font-size: 1.2em;
-                font-weight: bold;
-                margin-top: 17px;
-                margin-bottom: 4px;
-            }
-            &__location
-            {
-                margin-top: 4px;
-                margin-bottom: 17px;
-            }
-        }
-    }
+.Restaurantsbox__List__Cards {
+   margin-left: auto;
+   margin-right: auto;
+   width: 89%;
+   height: 252px;
+   box-shadow: 0.1px 0.1px 0.1px 0.1px $color-locationbox;
+   border: $color-locationbox 0.1px solid;
+   margin-top: 8px;
+   margin-bottom: 8px;
+   border-radius: 10px;
+   overflow: hidden;
+   background-color: $color-light;
+   &__imageframe {
+      display: block;
+      height: 175px;
+      position: relative;
+      @include images;
+      @include restaurantclass;
+      &__newbox {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 80px;
+         height: 30px;
+         position: absolute;
+         top: 12px;
+         right: 8px;
+         background-color: $color-tertiary;
+         color: $color-tertiarytext;
+      }
+   }
+   &__titlebox {
+      height: 69px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 8px;
+      padding-right: 8px;
+      &__onlytext {
+         text-decoration: none;
+         color: black;
+         display: block;
+         flex-direction: column;
+         &__title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 17px;
+            margin-bottom: 4px;
+         }
+         &__location {
+            margin-top: 4px;
+            margin-bottom: 17px;
+         }
+      }
+   }
 }
 /* Menu list*/
-.Menu__content__section
-{
-    & ul
-    {
-        @include list-style-type-none;
-    }
-    &__food
-    {
-        display: flex;
-        background-color: $color-light;
-        justify-content: space-between;
-        align-items: center;
-        overflow: hidden;
-        height: 68px;
-        margin-top: 8px;
-        margin-bottom: 8px;
-        border-radius: 10px;
-        box-shadow: $color-locationbox 10px 10px 10px;
-        padding-left: 10px;
-        &:hover .Menu__content__section__food__checked
-        {
-            transform: translateX(0px);
-        }
-        &:hover .Menu__content__section__food__textbox__price
-        {
-            transform: translateX(0px);
-        }
-        &:hover .Menu__content__section__food__checked__box
-        {
-            transform: rotate(360deg);
-        }
-        &__textbox
-        {
+.Menu__content__section {
+   & ul {
+      @include list-style-type-none;
+   }
+   &__food {
+      display: flex;
+      background-color: $color-light;
+      justify-content: space-between;
+      align-items: center;
+      overflow: hidden;
+      height: 68px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      border-radius: 10px;
+      box-shadow: $color-shadow 1px 1px 1px 1px;
+      &:hover .Menu__content__section__food__checked {
+         animation: checkin 400ms ease-in-out both;
+      }
+      &:hover .Menu__content__section__food__checked__box {
+         animation: rotate_checkin 400ms 200ms ease-in-out both;
+      }
+      &:not(:hover) .Menu__content__section__food__checked {
+         animation: checkout 400ms ease-in-out both;
+      }
+      &:not(:hover) .Menu__content__section__food__checked__box {
+         animation: rotate_checkout 400ms 200ms ease-in-out both;
+      }
+      &__textbox {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         height: 100%;
+         width: 10%;
+         flex: 1 1 auto;
+         &__name {
             display: flex;
-            flex-direction: row;
-           justify-content: space-between;
-            width: 100%;
-            height: 100%;
-            &__name{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                
-                &__title
-                {
-                    font-size: 1.2em;
-                    margin-top: 2px;
-                    margin-bottom: 2px;
-                }
-                &__description
-                {
-                    margin-top: 2px;
-                    margin-bottom: 2px;
-                    
-                }
-            }
-            &__pricebox
-            {
-                display: flex;
-                align-items: flex-end;
-                height: 100%;
-
-                &__price
-                {
-                   
-                    
-                    font-size: 0.8em;
-                    
-                }
-            }
-        }
-        &__checked
-        {
-            display: flex;
-            align-items: center;
+            flex-direction: column;
             justify-content: center;
-            background-color: $color-tertiary;
-            height: 100%;
-            width: 58px;
-            color: $color-light;
-            
-            &__box
-            {
-                width: 19px;
-                height: 19px;
-                
-                &__i
-                {
-                    font-size: 19px;
-                }
+            width: 80%;
+
+            &__title {
+               font-size: 1.2em;
+               margin-top: 2px;
+               margin-bottom: 2px;
+               white-space: nowrap;
+               overflow: hidden;
+               width: 100%;
+               text-overflow: ellipsis;
             }
-        }
-    }
+            &__description {
+               margin-top: 2px;
+               margin-bottom: 2px;
+               white-space: nowrap;
+               width: 100%;
+               overflow: hidden;
+               text-overflow: ellipsis;
+            }
+         }
+         &__pricebox {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            flex-shrink: 0;
+            height: 100%;
+            margin-right: 5px;
+
+            &__price {
+               font-size: 0.8em;
+            }
+         }
+      }
+      &__checked {
+         display: flex;
+         align-items: center;
+         margin-right: -15%;
+         justify-content: center;
+         background-color: $color-tertiary;
+         height: 100%;
+         min-width: 15%;
+
+         color: $color-light;
+
+         &__box {
+            width: 19px;
+            height: 19px;
+
+            &__i {
+               font-size: 19px;
+            }
+         }
+      }
+   }
 }
