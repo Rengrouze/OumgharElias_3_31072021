@@ -1,6 +1,8 @@
 /* color pallet */
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
+$color-primarylight: lighten($color-primary, 10%);
+$color-secondarylight: lighten($color-secondary, 10%);
 $color-tertiary: #99e2d0;
 $color-tertiarytext: #008766;
 $color-footer: #353535;

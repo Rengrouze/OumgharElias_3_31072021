@@ -307,6 +307,32 @@ main {
   background: linear-gradient(#ff79da, #9356dc);
   font-size: 0.9em;
   font-weight: bolder;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.Explorebox__Button:hover .Explorebox__Button__bg {
+  opacity: 1;
+}
+
+.Explorebox__Button:hover .Menu__footer__button__bg {
+  opacity: 1;
+}
+
+.Explorebox__Button__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50px;
+  z-index: -1;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fface8), to(#ae80e5));
+  background: linear-gradient(#fface8, #ae80e5);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .Howtobox__Step {
@@ -373,6 +399,32 @@ main {
   background: linear-gradient(#ff79da, #9356dc);
   font-size: 0.9em;
   font-weight: bolder;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.Menu__footer__button:hover .Explorebox__Button__bg {
+  opacity: 1;
+}
+
+.Menu__footer__button:hover .Menu__footer__button__bg {
+  opacity: 1;
+}
+
+.Menu__footer__button__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50px;
+  z-index: -1;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fface8), to(#ae80e5));
+  background: linear-gradient(#fface8, #ae80e5);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .Restaurantsbox__List__Cards {

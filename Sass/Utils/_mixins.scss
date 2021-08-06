@@ -1,61 +1,74 @@
-@mixin list-box-home
-{
-    &__title
-    {
-        margin-left: 5%;
-        margin-top: 50px;
-    }
-    ul{
-        @include list-style-type-none()
-    }
+@mixin list-box-home {
+   &__title {
+      margin-left: 5%;
+      margin-top: 50px;
+   }
+   ul {
+      @include list-style-type-none();
+   }
 }
 @mixin list-style-type-none {
-    list-style-type: none;
-        padding: 0;
-        width: 100%;
-        margin-top: auto;
-        margin-bottom: auto;
+   list-style-type: none;
+   padding: 0;
+   width: 100%;
+   margin-top: auto;
+   margin-bottom: auto;
 }
 
-@mixin underline /*underline block*/
-{
-    width: 10%;
-    height: 3px;
-    background-color: $color-tertiary;
+@mixin underline /*underline block*/ {
+   width: 10%;
+   height: 3px;
+   background-color: $color-tertiary;
 }
-@mixin button
-{
-    color: white;
-    border: none;
-    border-radius: 50px;
-    height: 50px;
-    width: 58%;
-    background: linear-gradient($color-secondary, $color-primary);
-    font-size: 0.9em;
-    font-weight: bolder;
+@mixin button {
+   color: white;
+   border: none;
+   border-radius: 50px;
+   height: 50px;
+   width: 58%;
+   background: linear-gradient($color-secondary, $color-primary);
+   font-size: 0.9em;
+   font-weight: bolder;
+   position: relative;
+   z-index: 1;
+   cursor: pointer;
+   &:hover {
+      & .Explorebox__Button__bg {
+         opacity: 1;
+      }
+      & .Menu__footer__button__bg {
+         opacity: 1;
+      }
+   }
+   &__bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      border-radius: 50px;
+      z-index: -1;
+      bottom: 0;
+      background: linear-gradient($color-secondarylight, $color-primarylight);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+   }
 }
 @mixin images {
-    background-clip: content-box;
-    background-size: cover;
-    background-position: center;
-
+   background-clip: content-box;
+   background-size: cover;
+   background-position: center;
 }
-@mixin restaurantclass
-{
-    &--palette
-    {
-        background-image: url("../../Public/Image/Restaurants/La_palette_du_gout_small.jpg");
-    }
-    &--france
-    {
-        background-image: url("../../Public/Image/Restaurants/a_la_francaise_small.jpg");
-    }
-    &--note
-    {
-        background-image: url("../../Public/Image/Restaurants/La_note_enchantee_small.jpg");
-    }
-    &--delice
-    {
-        background-image: url("../../Public/Image/Restaurants/Le_delice_des_sens_small.jpg");
-    }
+@mixin restaurantclass {
+   &--palette {
+      background-image: url("../../Public/Image/Restaurants/La_palette_du_gout_small.jpg");
+   }
+   &--france {
+      background-image: url("../../Public/Image/Restaurants/a_la_francaise_small.jpg");
+   }
+   &--note {
+      background-image: url("../../Public/Image/Restaurants/La_note_enchantee_small.jpg");
+   }
+   &--delice {
+      background-image: url("../../Public/Image/Restaurants/Le_delice_des_sens_small.jpg");
+   }
 }
