@@ -10,18 +10,23 @@
    </head>
    <body>
       <div class="Loaderbox">
+         <!-- loading spinning circle disappear after 1-2s -->
          <span class="Loaderbox__spiner"></span>
          <h1>Nous cherchons pour vous ce qu'il y'a de mieux</h1>
+         <!-- you can change the catchphrase here, or add a slogan -->
       </div>
       <header class="header header--shadow">
+         <!-- header with a title, nothing else, restaurants pages have an arrow to go back to index.html-->
          <h1 class="Logo Logo--header">ohmyfood</h1>
       </header>
 
       <main>
          <div class="Locationbox">
+            <!-- location box you can change here the name of the city, in a fullstack environment it will be changed -->
             <p class="Locationbox__City"><i class="fas fa-map-marker-alt"></i> Paris, Bellevile</p>
          </div>
          <div class="Explorebox">
+            <!-- explore box , allow the user to click on a (not working for now) button to explore the list of restaurants-->
             <h2 class="Explorebox__title">Réservez le menu qui vous convient</h2>
             <p class="Explorebox__Text">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
             <div class="Explorebox__Button">
@@ -30,6 +35,7 @@
             </div>
          </div>
          <div class="Howtobox">
+            <!-- How to box ! give the user the instructions to navigate on the website-->
             <h2 class="Howtobox__title">Fonctionnement</h2>
             <ul>
                <li class="Howtobox__Step">
@@ -49,26 +55,33 @@
             </ul>
          </div>
          <div class="Restaurantsbox">
+            <!-- restaurants box-->
             <h2 class="Restaurantsbox__title">Restaurants</h2>
             <ul class="Restaurantsbox__List">
                <li class="Restaurantsbox__List__Cards">
+                  <!-- this is a bit tricky, the first link is the image  frame, the second is the text frame, it allow the user to click on the like button, without accidentally clicked on the link-->
                   <a
                      class="Restaurantsbox__List__Cards__imageframe Restaurantsbox__List__Cards__imageframe--palette"
                      href="Public/Restaurants_Pages/La_palette_du_gout.html"
                   >
                      <div class="Restaurantsbox__List__Cards__imageframe__newbox">Nouveau</div>
+                     <!-- only use when the restaurant was added recently-->
                   </a>
                   <div class="Restaurantsbox__List__Cards__titlebox">
                      <a class="Restaurantsbox__List__Cards__titlebox__onlytext" href="Public/Restaurants_Pages/La_palette_du_gout.html">
                         <h3 class="Restaurantsbox__List__Cards__titlebox__onlytext__title">La palette du goût</h3>
+                        <!-- title of the restaurant-->
                         <p class="Restaurantsbox__List__Cards__titlebox__onlytext__location">Ménilmontant</p>
+                        <!-- location of the restaurant-->
                      </a>
                      <span class="Restaurantsbox__List__Cards__titlebox__heart">
+                        <!-- this is the heart, it allow the user to like the restaurant-->
                         <i class="far fa-heart Restaurantsbox__List__Cards__titlebox__heart__empty"></i>
                         <i class="fas fa-heart Restaurantsbox__List__Cards__titlebox__heart__bg"></i>
                      </span>
                   </div>
                </li>
+               <!-- same pattern beyond this point, so i won't repeat myself-->
                <li class="Restaurantsbox__List__Cards">
                   <a
                      class="Restaurantsbox__List__Cards__imageframe Restaurantsbox__List__Cards__imageframe--note"
@@ -125,6 +138,7 @@
          </div>
       </main>
       <footer class="footer">
+         <!-- The footer contains a logo and the usuals links, mailto "join us" etc-->
          <div class="footer__content">
             <h1 class="Logo Logo--footer">ohmyfood</h1>
             <ul class="footer__content__list">
@@ -143,6 +157,7 @@
                <li class="footer__content__list__item"><a class="footer__content__list__item__link" href="#">Mentions légales</a></li>
                <li class="footer__content__list__item">
                   <a class="footer__content__list__item__link" href="mailto:eoumghar@gmail.com">Contact</a>
+                  <!--for testing purpose this is my email, don't spam me-->
                </li>
             </ul>
          </div>

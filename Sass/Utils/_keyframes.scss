@@ -1,5 +1,6 @@
-/* loader */
+/* list of animations not in order of appearance */
 
+/* this only applies ot the loading spinner */
 @keyframes opacity_loader {
    0% {
       opacity: 0;
@@ -18,6 +19,22 @@
       transform: rotate(360deg);
    }
 }
+/*end of loading spinner rules*/
+
+/* how menu appears */
+@keyframes menuloadsection {
+   0% {
+      opacity: 0;
+      transform: translateY(5px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0px);
+   }
+}
+/* end of menu */
+
+/* the little green box that appears when you click on a menu item */
 @keyframes checkin {
    from {
       margin-right: -15%;
@@ -50,13 +67,4 @@
       transform: rotate(360deg);
    }
 }
-@keyframes menuloadsection {
-   0% {
-      opacity: 0;
-      transform: translateY(5px);
-   }
-   100% {
-      opacity: 1;
-      transform: translateY(0px);
-   }
-}
+/* end of the green box */

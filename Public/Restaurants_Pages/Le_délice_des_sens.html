@@ -10,13 +10,17 @@
    </head>
    <body>
       <header class="header">
+         <!-- contains the logo and a link to go back to index.html-->
          <h1 class="Logo Logo--header">ohmyfood</h1>
          <a href="../../index.html"><i class="fas fa-arrow-left header__arrow"></i></a>
       </header>
       <main>
          <div class="container container--delice"></div>
+         <!-- container for an image, the image is set with css-->
          <div class="Menu">
+            <!-- Menu contains the name of the restaurant, what can you order, and order button-->
             <div class="Menu__header">
+               <!-- name + like button -->
                <h2 class="Menu__header__title">Le délice des sens</h2>
                <span class="Menu__header__heart">
                   <i class="far fa-heart Menu__header__heart__empty"></i>
@@ -24,26 +28,36 @@
                </span>
             </div>
             <div class="Menu__content">
+               <!-- Actually 3 sections, starters, main, desserts-->
                <div class="Menu__content__section Menu__content__section--starters">
                   <h3 class="Menu__content__section__title">ENTRÉES</h3>
+                  <!-- title of the section-->
                   <div class="Menu__content__section__underline"></div>
+                  <!-- underline block of the section-->
                   <ul>
+                     <!-- list of the different starter-->
                      <li class="Menu__content__section__food">
+                        <!-- Food -->
                         <div class="Menu__content__section__food__textbox">
                            <div class="Menu__content__section__food__textbox__name">
                               <h4 class="Menu__content__section__food__textbox__name__title">Tartare de thon</h4>
+                              <!-- name of the starter-->
                               <p class="Menu__content__section__food__textbox__name__description">Assaisonné au yuzu</p>
+                              <!-- description of the starter-->
                            </div>
                            <div class="Menu__content__section__food__textbox__pricebox">
                               <p class="Menu__content__section__food__textbox__pricebox__price">25€</p>
+                              <!-- price of the starter-->
                            </div>
                         </div>
                         <div class="Menu__content__section__food__checked">
+                           <!-- checkbox -->
                            <span class="Menu__content__section__food__checked__box"
                               ><i class="fas fa-check-circle Menu__content__section__food__checked__box__i"></i
                            ></span>
                         </div>
                      </li>
+                     <!-- it's the same pattern after that so i won't repeat myself-->
                      <li class="Menu__content__section__food">
                         <div class="Menu__content__section__food__textbox">
                            <div class="Menu__content__section__food__textbox__name">
@@ -188,6 +202,7 @@
                </div>
             </div>
             <div class="Menu__footer">
+               <!--Menu footer, contains a button, that's all.-->
                <div class="Menu__footer__button">
                   Commander
                   <div class="Menu__footer__button__bg"></div>
@@ -196,6 +211,7 @@
          </div>
       </main>
       <footer class="footer">
+         <!-- i won't comment that here, go to index.html to see it -->
          <div class="footer__content">
             <h1 class="Logo Logo--footer">ohmyfood</h1>
             <ul class="footer__content__list">

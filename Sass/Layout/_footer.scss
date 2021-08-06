@@ -1,35 +1,28 @@
-.footer
-{
-    
-    height: auto;
-    background-color: $color-footer;
-    &__content
-    {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        margin-left: 8%;
-        &__list
-        {
-            list-style: none;
-            padding: 0%;
-            &__item
-            {
-                margin-top: 6px;
-                margin-bottom: 6px;
-                &__link
-                {
-                    text-decoration: none;
-                    color: $color-light;
-                    font-family: 'Roboto' ;
-                    &__icon
-                    {
-                    margin-right: 5px;
-                    width: 15px;
-                    }
-
-                }
+/* rules for the footer */
+.footer {
+   height: auto;
+   background-color: $color-footer;
+   &__content {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 8%;
+      &__list {
+         list-style: none;
+         padding: 0%;
+         &__item {
+            margin-top: 6px;
+            margin-bottom: 6px;
+            &__link {
+               text-decoration: none;
+               color: $color-light;
+               font-family: "Roboto";
+               &__icon {
+                  margin-right: 5px;
+                  width: 15px;
+               }
             }
-        }
-    }
+         }
+      }
+   }
 }

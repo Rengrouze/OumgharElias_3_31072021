@@ -54,6 +54,7 @@
             font-weight: 400;
             margin-bottom: 8px;
          }
+         /* You'll find the rules for the food section in _list.scss */
          &__underline {
             @include underline;
          }
@@ -64,5 +65,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      &__button {
+         @include button;
+      }
    }
 }

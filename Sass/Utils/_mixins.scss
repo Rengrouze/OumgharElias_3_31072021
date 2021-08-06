@@ -1,3 +1,6 @@
+/* list of mixin not in order of use */
+
+/* only for home page, allow to center the content and negate default list style*/
 @mixin list-box-home {
    &__title {
       margin-left: 5%;
@@ -7,6 +10,8 @@
       @include list-style-type-none();
    }
 }
+
+/* allow to negate default list style */
 @mixin list-style-type-none {
    list-style-type: none;
    padding: 0;
@@ -14,12 +19,14 @@
    margin-top: auto;
    margin-bottom: auto;
 }
-
-@mixin underline /*underline block*/ {
+/* underline block under each title on menu like "entrées, plats, desserts" */
+@mixin underline {
    width: 10%;
    height: 3px;
    background-color: $color-tertiary;
 }
+
+/* format the major button to the same size+color+padding etc. */
 @mixin button {
    color: white;
    border: none;
@@ -55,11 +62,15 @@
       transition: opacity 0.3s ease-in-out;
    }
 }
+
+/* allow to format image in a div for better size */
 @mixin images {
    background-clip: content-box;
    background-size: cover;
    background-position: center;
 }
+
+/* if you want to add a restaurant, this is where you should add its image and add the correct modifier name*/
 @mixin restaurantclass {
    &--palette {
       background-image: url("../../Public/Image/Restaurants/La_palette_du_gout_small.jpg");
@@ -74,6 +85,8 @@
       background-image: url("../../Public/Image/Restaurants/Le_delice_des_sens_small.jpg");
    }
 }
+
+/* set of rules to making the like button work*/
 @mixin like {
    position: relative;
    &__empty {
@@ -95,7 +108,7 @@
       opacity: 0;
       transition: opacity 0.2s ease-in-out;
       background: linear-gradient($color-primary, $color-secondary);
-      background-clip: text;
+      background-clip: text; /* Warning: background-clip isn't authorized by the CSS Validator, it's normal, the correct way to do is to use the prefix -webkit- but i use both for compatibility */
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
    }

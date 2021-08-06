@@ -1,16 +1,15 @@
-.Logo
-{
-    font-family: 'Shrikhand', cursive;
-    &--header
-    {
-        width: 100%;
-        line-height: 63px;
-        margin: 0;
-    }
-    &--footer
-    {
-    font-size: 1.5em;
-    color: $color-light;
-    margin-bottom: 2px;
-    }
+/*Yes a set of rules only for the logo*/
+
+.Logo {
+   font-family: "Shrikhand", cursive;
+   &--header {
+      width: 100%;
+      line-height: 63px;
+      margin: 0;
+   }
+   &--footer {
+      font-size: 1.5em;
+      color: $color-light;
+      margin-bottom: 2px;
+   }
 }

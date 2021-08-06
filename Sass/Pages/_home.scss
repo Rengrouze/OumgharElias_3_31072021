@@ -1,45 +1,45 @@
-/*buttons of the lists are on the buttons.scss file*/
-.Locationbox
-{
-    background-color: $color-locationbox;
-    color: $color-locationbox-text;
-    width: 100%;
-    font-weight: bold;
-    text-align: center;
+/* rules for the home page */
+
+.Locationbox {
+   background-color: $color-locationbox;
+   color: $color-subtitle;
+   width: 100%;
+   font-weight: bold;
+   text-align: center;
 }
-.Explorebox
-{
-    background-color: $color-background;
-    height: 286px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-    &__title
-    {
-        width: 65%;
-    }
-    &__Text
-    {
-        width: 75%;
-        color: $color-subtitle;
-    }
+.Explorebox {
+   background-color: $color-background;
+   height: 286px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   text-align: center;
+   &__title {
+      width: 65%;
+   }
+   &__Text {
+      width: 75%;
+      color: $color-subtitle;
+   }
+   &__Button {
+      @include button;
+   }
 }
-.Howtobox
-{
-    width: 100%;
-    height: 440px;
-    background-color: $color-light;
-    display: flex;
-    flex-direction: column;
-    @include list-box-home;
+.Howtobox {
+   width: 100%;
+   height: 440px;
+   background-color: $color-light;
+   display: flex;
+   flex-direction: column;
+   @include list-box-home;
+   /* you'll find rules for this box in _list.scss */
 }
-.Restaurantsbox
-{
-    background-color: $color-background;
-    width: 100%;
-    margin-bottom: 30px;
-    @include list-box-home;
+.Restaurantsbox {
+   background-color: $color-background;
+   width: 100%;
+   margin-bottom: 30px;
+   @include list-box-home;
+   /* you'll find rules for this box in _list.scss */
 }

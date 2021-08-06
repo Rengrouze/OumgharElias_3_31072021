@@ -1,3 +1,5 @@
+/*List of value*/
+
 /* color pallet */
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
@@ -6,23 +8,22 @@ $color-secondarylight: lighten($color-secondary, 10%);
 $color-tertiary: #99e2d0;
 $color-tertiarytext: #008766;
 $color-footer: #353535;
-$color-dark: #000000;
-$color-light: #ffffff;
+$color-dark: #000000; /*black*/
+$color-light: #ffffff; /*white*/
 $color-background: #f6f6f6;
 $color-locationbox: #eaeaea;
-$color-locationbox-text: #353535;
 $color-subtitle: #353535;
 $color-icon-neutral: #7e7e7e;
 $color-Howtobutton3: #f5edff;
 $color-shadow: #e7e7e7;
 
 /*loader values */
-/* color pallet*/
+/* color pallet of the loader*/
 $sidedot: $color-secondary;
 $centraldot: $color-tertiary;
 /*size*/
 $loadersize: 48px;
 /*End of loader values */
 
-/* value for animation delay */
+/* value for checkbox animation */
 $checktime: 0.4s;

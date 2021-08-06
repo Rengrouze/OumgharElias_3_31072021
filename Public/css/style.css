@@ -1,10 +1,15 @@
+@charset "UTF-8";
+/*List of value*/
 /* color pallet */
+/*black*/
+/*white*/
 /*loader values */
-/* color pallet*/
+/* color pallet of the loader*/
 /*size*/
 /*End of loader values */
-/* value for animation delay */
-/* loader */
+/* value for checkbox animation */
+/* list of animations not in order of appearance */
+/* this only applies ot the loading spinner */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @-webkit-keyframes opacity_loader {
@@ -50,6 +55,35 @@
   }
 }
 
+/*end of loading spinner rules*/
+/* how menu appears */
+@-webkit-keyframes menuloadsection {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+@keyframes menuloadsection {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+/* end of menu */
+/* the little green box that appears when you click on a menu item */
 @-webkit-keyframes checkin {
   from {
     margin-right: -15%;
@@ -58,7 +92,6 @@
     margin-right: 0%;
   }
 }
-
 @keyframes checkin {
   from {
     margin-right: -15%;
@@ -130,36 +163,22 @@
   }
 }
 
-@-webkit-keyframes menuloadsection {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
-@keyframes menuloadsection {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
+/* end of the green box */
+/* list of mixin not in order of use */
+/* only for home page, allow to center the content and negate default list style*/
+/* allow to negate default list style */
+/* underline block under each title on menu like "entrées, plats, desserts" */
+/* format the major button to the same size+color+padding etc. */
+/* allow to format image in a div for better size */
+/* if you want to add a restaurant, this is where you should add its image and add the correct modifier name*/
+/* set of rules to making the like button work*/
 /* If you want to use the font, you can import it like this:*/
 /* font-family: 'Shrikhand', cursive; */
+/* for title font */
 /* if you want to use the font, you can import it like this:*/
 /*font-family: 'Roboto', sans-serif; */
+/* for text font */
+/* rules for the header */
 .header {
   width: 100%;
   text-align: center;
@@ -180,6 +199,7 @@
   color: #000000;
 }
 
+/* rules for the footer */
 .footer {
   height: auto;
   background-color: #353535;
@@ -210,7 +230,7 @@
 .footer__content__list__item__link {
   text-decoration: none;
   color: #ffffff;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 .footer__content__list__item__link__icon {
@@ -218,6 +238,7 @@
   width: 15px;
 }
 
+/* alow the page to be centered */
 body {
   margin: 0;
   height: auto;
@@ -235,9 +256,10 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
+/* loading spinner when you lauch the page */
 .Loaderbox {
   height: 100%;
   width: 100%;
@@ -275,13 +297,14 @@ main {
 
 .Loaderbox h1 {
   margin-top: 50px;
-  font-family: 'Shrikhand';
+  font-family: "Shrikhand";
   width: 70%;
   text-align: center;
 }
 
+/*Yes a set of rules only for the logo*/
 .Logo {
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
 }
 
 .Logo--header {
@@ -296,47 +319,8 @@ main {
   margin-bottom: 2px;
 }
 
-/* Home page buttons */
-.Explorebox__Button {
-  color: white;
-  border: none;
-  border-radius: 50px;
-  height: 50px;
-  width: 58%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background: linear-gradient(#ff79da, #9356dc);
-  font-size: 0.9em;
-  font-weight: bolder;
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  cursor: pointer;
-  line-height: 50px;
-}
-
-.Explorebox__Button:hover .Explorebox__Button__bg {
-  opacity: 1;
-}
-
-.Explorebox__Button:hover .Menu__footer__button__bg {
-  opacity: 1;
-}
-
-.Explorebox__Button__bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  border-radius: 50px;
-  z-index: -1;
-  bottom: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fface8), to(#ae80e5));
-  background: linear-gradient(#fface8, #ae80e5);
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-}
-
+/*home page*/
+/* this is how you display the list of restaurants */
 .Howtobox__Step {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -388,47 +372,6 @@ main {
 
 .Howtobox__Step--markup {
   background: #f5edff;
-}
-
-/* Menu pages buttons */
-.Menu__footer__button {
-  color: white;
-  border: none;
-  border-radius: 50px;
-  height: 50px;
-  width: 58%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background: linear-gradient(#ff79da, #9356dc);
-  font-size: 0.9em;
-  font-weight: bolder;
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  cursor: pointer;
-  line-height: 50px;
-}
-
-.Menu__footer__button:hover .Explorebox__Button__bg {
-  opacity: 1;
-}
-
-.Menu__footer__button:hover .Menu__footer__button__bg {
-  opacity: 1;
-}
-
-.Menu__footer__button__bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  border-radius: 50px;
-  z-index: -1;
-  bottom: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fface8), to(#ae80e5));
-  background: linear-gradient(#fface8, #ae80e5);
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
 }
 
 .Restaurantsbox__List__Cards {
@@ -565,11 +508,13 @@ main {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
+  /* Warning: background-clip isn't authorized by the CSS Validator, it's normal, the correct way to do is to use the prefix -webkit- but i use both for compatibility */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 /* Menu list*/
+/* this is how you display the list of food in menus */
 .Menu__content__section ul {
   list-style-type: none;
   padding: 0;
@@ -721,7 +666,7 @@ main {
   font-size: 19px;
 }
 
-/*buttons of the lists are on the buttons.scss file*/
+/* rules for the home page */
 .Locationbox {
   background-color: #eaeaea;
   color: #353535;
@@ -759,6 +704,46 @@ main {
   color: #353535;
 }
 
+.Explorebox__Button {
+  color: white;
+  border: none;
+  border-radius: 50px;
+  height: 50px;
+  width: 58%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  font-size: 0.9em;
+  font-weight: bolder;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  cursor: pointer;
+  line-height: 50px;
+}
+
+.Explorebox__Button:hover .Explorebox__Button__bg {
+  opacity: 1;
+}
+
+.Explorebox__Button:hover .Menu__footer__button__bg {
+  opacity: 1;
+}
+
+.Explorebox__Button__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50px;
+  z-index: -1;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fface8), to(#ae80e5));
+  background: linear-gradient(#fface8, #ae80e5);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
 .Howtobox {
   width: 100%;
   height: 440px;
@@ -770,6 +755,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /* you'll find rules for this box in _list.scss */
 }
 
 .Howtobox__title {
@@ -789,6 +775,7 @@ main {
   background-color: #f6f6f6;
   width: 100%;
   margin-bottom: 30px;
+  /* you'll find rules for this box in _list.scss */
 }
 
 .Restaurantsbox__title {
@@ -896,6 +883,7 @@ main {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
+  /* Warning: background-clip isn't authorized by the CSS Validator, it's normal, the correct way to do is to use the prefix -webkit- but i use both for compatibility */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -908,6 +896,7 @@ main {
 
 .Menu__content__section {
   width: 100%;
+  /* You'll find the rules for the food section in _list.scss */
 }
 
 .Menu__content__section--starters {
@@ -947,4 +936,44 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.Menu__footer__button {
+  color: white;
+  border: none;
+  border-radius: 50px;
+  height: 50px;
+  width: 58%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  font-size: 0.9em;
+  font-weight: bolder;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  cursor: pointer;
+  line-height: 50px;
+}
+
+.Menu__footer__button:hover .Explorebox__Button__bg {
+  opacity: 1;
+}
+
+.Menu__footer__button:hover .Menu__footer__button__bg {
+  opacity: 1;
+}
+
+.Menu__footer__button__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50px;
+  z-index: -1;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fface8), to(#ae80e5));
+  background: linear-gradient(#fface8, #ae80e5);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }

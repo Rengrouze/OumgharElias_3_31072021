@@ -1,3 +1,46 @@
+/*home page*/
+/* this is how you display the list of restaurants */
+.Howtobox__Step {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   height: 70px;
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 21.5px;
+   margin-bottom: 21.5px;
+   border-radius: 20px;
+   background: $color-background;
+   box-shadow: $color-shadow 10px 10px 10px;
+   font-size: 1em;
+   font-weight: bold;
+   position: relative;
+   &__number {
+      position: absolute;
+      left: -10px;
+      border-radius: 50%;
+      background-color: $color-primary;
+      color: $color-light;
+      height: 25px;
+      width: 25px;
+      font-size: 0.7em;
+      text-align: center;
+      line-height: 25px;
+   }
+   &__icon {
+      position: absolute;
+      margin-right: 5px;
+      left: 40px;
+      color: $color-icon-neutral;
+      &--colored {
+         color: $color-primary;
+      }
+   }
+   &--markup {
+      background: $color-Howtobutton3;
+   }
+}
 .Restaurantsbox__List__Cards {
    margin-left: auto;
    margin-right: auto;
@@ -66,6 +109,7 @@
    }
 }
 /* Menu list*/
+/* this is how you display the list of food in menus */
 .Menu__content__section {
    & ul {
       @include list-style-type-none;
