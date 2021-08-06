@@ -31,7 +31,9 @@
    font-weight: bolder;
    position: relative;
    z-index: 1;
+   text-align: center;
    cursor: pointer;
+   line-height: 50px;
    &:hover {
       & .Explorebox__Button__bg {
          opacity: 1;

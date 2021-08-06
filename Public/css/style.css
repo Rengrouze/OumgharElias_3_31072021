@@ -309,7 +309,9 @@ main {
   font-weight: bolder;
   position: relative;
   z-index: 1;
+  text-align: center;
   cursor: pointer;
+  line-height: 50px;
 }
 
 .Explorebox__Button:hover .Explorebox__Button__bg {
@@ -401,7 +403,9 @@ main {
   font-weight: bolder;
   position: relative;
   z-index: 1;
+  text-align: center;
   cursor: pointer;
+  line-height: 50px;
 }
 
 .Menu__footer__button:hover .Explorebox__Button__bg {
