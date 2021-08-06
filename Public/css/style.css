@@ -532,6 +532,7 @@ main {
   font-size: 1.2em;
   margin-top: 2px;
   margin-bottom: 2px;
+  margin-left: 5px;
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
@@ -541,6 +542,7 @@ main {
 .Menu__content__section__food__textbox__name__description {
   margin-top: 2px;
   margin-bottom: 2px;
+  margin-left: 5px;
   white-space: nowrap;
   width: 100%;
   overflow: hidden;
