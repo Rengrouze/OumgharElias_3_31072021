@@ -1,24 +1,52 @@
-
 /* loader */
 
 @keyframes opacity_loader {
-    0% {
-        opacity: 0;
-        z-index: -1;
-        }
-    100% {
-        opacity: 1;
-        z-index: 3; 
-    }
-
+   0% {
+      opacity: 0;
+      z-index: -1;
+   }
+   100% {
+      opacity: 1;
+      z-index: 3;
+   }
 }
 @keyframes rotation {
-    from {
+   from {
       transform: rotate(0deg);
-
-    }
-    to {
+   }
+   to {
       transform: rotate(360deg);
-
-    }
-  }
+   }
+}
+@keyframes checkin {
+   from {
+      margin-right: -15%;
+   }
+   to {
+      margin-right: 0%;
+   }
+}
+@keyframes checkout {
+   from {
+      margin-right: 0%;
+   }
+   to {
+      margin-right: -15%;
+   }
+}
+@keyframes rotate_checkin {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
+@keyframes rotate_checkout {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}

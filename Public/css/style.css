@@ -49,6 +49,86 @@
   }
 }
 
+@-webkit-keyframes checkin {
+  from {
+    margin-right: -15%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
+
+@keyframes checkin {
+  from {
+    margin-right: -15%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
+
+@-webkit-keyframes checkout {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: -15%;
+  }
+}
+
+@keyframes checkout {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: -15%;
+  }
+}
+
+@-webkit-keyframes rotate_checkin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate_checkin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate_checkout {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate_checkout {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 /* If you want to use the font, you can import it like this:*/
 /* font-family: 'Shrikhand', cursive; */
 /* if you want to use the font, you can import it like this:*/
@@ -61,8 +141,8 @@
 }
 
 .header--shadow {
-  -webkit-box-shadow: #7e7e7e 0px 0px 10px 0px;
-          box-shadow: #7e7e7e 0px 0px 10px 0px;
+  -webkit-box-shadow: #e7e7e7 0px 0px 10px 0px;
+          box-shadow: #e7e7e7 0px 0px 10px 0px;
 }
 
 .header__arrow {
@@ -102,7 +182,7 @@
 
 .footer__content__list__item__link {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: 'Roboto';
 }
 
@@ -158,8 +238,8 @@ main {
   border-radius: 50%;
   display: inline-block;
   position: relative;
-  background: #99E2D0;
-  color: #FF79DA;
+  background: #99e2d0;
+  color: #ff79da;
   -webkit-box-shadow: -24px 0, 24px 0;
           box-shadow: -24px 0, 24px 0;
   -webkit-animation: rotation 2s ease-in-out infinite;
@@ -185,7 +265,7 @@ main {
 
 .Logo--footer {
   font-size: 1.5em;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 2px;
 }
 
@@ -196,8 +276,8 @@ main {
   border-radius: 50px;
   height: 50px;
   width: 58%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
   font-size: 0.9em;
   font-weight: bolder;
 }
@@ -220,8 +300,8 @@ main {
   margin-bottom: 21.5px;
   border-radius: 20px;
   background: #f6f6f6;
-  -webkit-box-shadow: #eaeaea 10px 10px 10px;
-          box-shadow: #eaeaea 10px 10px 10px;
+  -webkit-box-shadow: #e7e7e7 10px 10px 10px;
+          box-shadow: #e7e7e7 10px 10px 10px;
   font-size: 1em;
   font-weight: bold;
   position: relative;
@@ -231,8 +311,8 @@ main {
   position: absolute;
   left: -10px;
   border-radius: 50%;
-  background-color: #9356DC;
-  color: #FFFFFF;
+  background-color: #9356dc;
+  color: #ffffff;
   height: 25px;
   width: 25px;
   font-size: 0.7em;
@@ -248,7 +328,7 @@ main {
 }
 
 .Howtobox__Step__icon--colored {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .Howtobox__Step--markup {
@@ -262,8 +342,8 @@ main {
   border-radius: 50px;
   height: 50px;
   width: 58%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
   font-size: 0.9em;
   font-weight: bolder;
 }
@@ -280,19 +360,32 @@ main {
   margin-bottom: 8px;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .Restaurantsbox__List__Cards__imageframe {
   display: block;
   height: 175px;
-  overflow: hidden;
   position: relative;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
 }
 
-.Restaurantsbox__List__Cards__imageframe__image {
-  width: 100%;
-  height: auto;
+.Restaurantsbox__List__Cards__imageframe--palette {
+  background-image: url("../../Public/Image/Restaurants/La_palette_du_gout_small.jpg");
+}
+
+.Restaurantsbox__List__Cards__imageframe--france {
+  background-image: url("../../Public/Image/Restaurants/a_la_francaise_small.jpg");
+}
+
+.Restaurantsbox__List__Cards__imageframe--note {
+  background-image: url("../../Public/Image/Restaurants/La_note_enchantee_small.jpg");
+}
+
+.Restaurantsbox__List__Cards__imageframe--delice {
+  background-image: url("../../Public/Image/Restaurants/Le_delice_des_sens_small.jpg");
 }
 
 .Restaurantsbox__List__Cards__imageframe__newbox {
@@ -310,7 +403,7 @@ main {
   position: absolute;
   top: 12px;
   right: 8px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: #008766;
 }
 
@@ -364,7 +457,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -373,30 +466,55 @@ main {
           align-items: center;
   overflow: hidden;
   height: 68px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 8px;
   margin-bottom: 8px;
   border-radius: 10px;
-  -webkit-box-shadow: #eaeaea 10px 10px 10px;
-          box-shadow: #eaeaea 10px 10px 10px;
-  padding-left: 10px;
+  -webkit-box-shadow: #e7e7e7 1px 1px 1px 1px;
+          box-shadow: #e7e7e7 1px 1px 1px 1px;
 }
 
 .Menu__content__section__food:hover .Menu__content__section__food__checked {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-}
-
-.Menu__content__section__food:hover .Menu__content__section__food__textbox__price {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
+  -webkit-animation: checkin 400ms ease-in-out both;
+          animation: checkin 400ms ease-in-out both;
 }
 
 .Menu__content__section__food:hover .Menu__content__section__food__checked__box {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -webkit-animation: rotate_checkin 400ms 200ms ease-in-out both;
+          animation: rotate_checkin 400ms 200ms ease-in-out both;
+}
+
+.Menu__content__section__food:not(:hover) .Menu__content__section__food__checked {
+  -webkit-animation: checkout 400ms ease-in-out both;
+          animation: checkout 400ms ease-in-out both;
+}
+
+.Menu__content__section__food:not(:hover) .Menu__content__section__food__checked__box {
+  -webkit-animation: rotate_checkout 400ms 200ms ease-in-out both;
+          animation: rotate_checkout 400ms 200ms ease-in-out both;
 }
 
 .Menu__content__section__food__textbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  width: 10%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.Menu__content__section__food__textbox__name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -404,41 +522,49 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
-  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
 }
 
-.Menu__content__section__food__textbox__title {
+.Menu__content__section__food__textbox__name__title {
   font-size: 1.2em;
   margin-top: 2px;
   margin-bottom: 2px;
-  width: 222px;
   white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
 }
 
-.Menu__content__section__food__textbox__description {
+.Menu__content__section__food__textbox__name__description {
   margin-top: 2px;
   margin-bottom: 2px;
-  width: 222px;
   white-space: nowrap;
-  text-overflow: ellipsis;
+  width: 100%;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.Menu__content__section__food__textbox__price {
-  position: absolute;
-  margin: 0%;
-  right: 23px;
-  bottom: 5px;
+.Menu__content__section__food__textbox__pricebox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 100%;
+  margin-right: 5px;
+}
+
+.Menu__content__section__food__textbox__pricebox__price {
   font-size: 0.8em;
-  -webkit-transform: translateX(58px);
-          transform: translateX(58px);
-  -webkit-transition: -webkit-transform 300ms ease-in-out;
-  transition: -webkit-transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
 .Menu__content__section__food__checked {
@@ -448,30 +574,19 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: -15%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   height: 100%;
-  width: 58px;
-  color: #FFFFFF;
-  -webkit-transition: -webkit-transform 300ms ease-in-out;
-  transition: -webkit-transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
-  -webkit-transform: translateX(58px);
-          transform: translateX(58px);
+  min-width: 15%;
+  color: #ffffff;
 }
 
 .Menu__content__section__food__checked__box {
   width: 19px;
   height: 19px;
-  -webkit-transition: -webkit-transform 400ms 100ms ease-in-out;
-  transition: -webkit-transform 400ms 100ms ease-in-out;
-  transition: transform 400ms 100ms ease-in-out;
-  transition: transform 400ms 100ms ease-in-out, -webkit-transform 400ms 100ms ease-in-out;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
 }
 
 .Menu__content__section__food__checked__box__i {
@@ -519,7 +634,7 @@ main {
 .Howtobox {
   width: 100%;
   height: 440px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -565,11 +680,25 @@ main {
   height: 265px;
   width: 100%;
   z-index: -1;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
 }
 
-.container__image {
-  height: auto;
-  width: 100%;
+.container--palette {
+  background-image: url("../../Public/Image/Restaurants/La_palette_du_gout_small.jpg");
+}
+
+.container--france {
+  background-image: url("../../Public/Image/Restaurants/a_la_francaise_small.jpg");
+}
+
+.container--note {
+  background-image: url("../../Public/Image/Restaurants/La_note_enchantee_small.jpg");
+}
+
+.container--delice {
+  background-image: url("../../Public/Image/Restaurants/Le_delice_des_sens_small.jpg");
 }
 
 .Menu {
@@ -610,6 +739,10 @@ main {
   margin-right: auto;
 }
 
+.Menu__content__section {
+  width: 100%;
+}
+
 .Menu__content__section__title {
   font-weight: 400;
   margin-bottom: 8px;
@@ -618,7 +751,7 @@ main {
 .Menu__content__section__underline {
   width: 10%;
   height: 3px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
 }
 
 .Menu__footer {
