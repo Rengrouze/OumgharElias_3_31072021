@@ -393,8 +393,6 @@ main {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  /* Menu list*/
-  /* this is how you display the list of food in menus */
 }
 
 @media (max-width: 765px) {
@@ -576,7 +574,9 @@ main {
   -webkit-text-fill-color: transparent;
 }
 
-.Restaurantsbox__List .Menu__content__section ul {
+/* Menu list*/
+/* this is how you display the list of food in menus */
+.Menu__content__section ul {
   list-style-type: none;
   padding: 0;
   width: 100%;
@@ -584,7 +584,7 @@ main {
   margin-bottom: auto;
 }
 
-.Restaurantsbox__List .Menu__content__section__food {
+.Menu__content__section__food {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -608,27 +608,27 @@ main {
           box-shadow: #e7e7e7 1px 1px 1px 1px;
 }
 
-.Restaurantsbox__List .Menu__content__section__food:hover .Menu__content__section__food__checked {
+.Menu__content__section__food:hover .Menu__content__section__food__checked {
   -webkit-animation: checkin 0.4s ease-in-out both;
           animation: checkin 0.4s ease-in-out both;
 }
 
-.Restaurantsbox__List .Menu__content__section__food:hover .Menu__content__section__food__checked__box {
+.Menu__content__section__food:hover .Menu__content__section__food__checked__box {
   -webkit-animation: rotate_checkin 0.4s 200ms ease-in-out both;
           animation: rotate_checkin 0.4s 200ms ease-in-out both;
 }
 
-.Restaurantsbox__List .Menu__content__section__food:not(:hover) .Menu__content__section__food__checked {
+.Menu__content__section__food:not(:hover) .Menu__content__section__food__checked {
   -webkit-animation: checkout 0.4s ease-in-out both;
           animation: checkout 0.4s ease-in-out both;
 }
 
-.Restaurantsbox__List .Menu__content__section__food:not(:hover) .Menu__content__section__food__checked__box {
+.Menu__content__section__food:not(:hover) .Menu__content__section__food__checked__box {
   -webkit-animation: rotate_checkout 0.4s 200ms ease-in-out both;
           animation: rotate_checkout 0.4s 200ms ease-in-out both;
 }
 
-.Restaurantsbox__List .Menu__content__section__food__textbox {
+.Menu__content__section__food__textbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -646,7 +646,7 @@ main {
           flex: 1 1 auto;
 }
 
-.Restaurantsbox__List .Menu__content__section__food__textbox__name {
+.Menu__content__section__food__textbox__name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -660,7 +660,7 @@ main {
   width: 80%;
 }
 
-.Restaurantsbox__List .Menu__content__section__food__textbox__name__title {
+.Menu__content__section__food__textbox__name__title {
   font-size: 1.2em;
   margin-top: 2px;
   margin-bottom: 2px;
@@ -671,7 +671,7 @@ main {
   text-overflow: ellipsis;
 }
 
-.Restaurantsbox__List .Menu__content__section__food__textbox__name__description {
+.Menu__content__section__food__textbox__name__description {
   margin-top: 2px;
   margin-bottom: 2px;
   margin-left: 5px;
@@ -681,7 +681,7 @@ main {
   text-overflow: ellipsis;
 }
 
-.Restaurantsbox__List .Menu__content__section__food__textbox__pricebox {
+.Menu__content__section__food__textbox__pricebox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -697,11 +697,11 @@ main {
   margin-right: 5%;
 }
 
-.Restaurantsbox__List .Menu__content__section__food__textbox__pricebox__price {
+.Menu__content__section__food__textbox__pricebox__price {
   font-size: 0.8em;
 }
 
-.Restaurantsbox__List .Menu__content__section__food__checked {
+.Menu__content__section__food__checked {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -718,12 +718,12 @@ main {
   color: #ffffff;
 }
 
-.Restaurantsbox__List .Menu__content__section__food__checked__box {
+.Menu__content__section__food__checked__box {
   width: 19px;
   height: 19px;
 }
 
-.Restaurantsbox__List .Menu__content__section__food__checked__box__i {
+.Menu__content__section__food__checked__box__i {
   font-size: 19px;
 }
 
