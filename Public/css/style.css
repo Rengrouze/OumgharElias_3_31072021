@@ -332,7 +332,7 @@ main {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   height: 70px;
-  width: 90%;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 21.5px;
@@ -344,6 +344,12 @@ main {
   font-size: 1em;
   font-weight: bold;
   position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .Howtobox__Step {
+    width: 90%;
+  }
 }
 
 .Howtobox__Step__number {
@@ -374,10 +380,34 @@ main {
   background: #f5edff;
 }
 
+.Restaurantsbox__List {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  /* Menu list*/
+  /* this is how you display the list of food in menus */
+}
+
+@media (max-width: 765px) {
+  .Restaurantsbox__List {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .Restaurantsbox__List__Cards {
-  margin-left: auto;
-  margin-right: auto;
-  width: 89%;
+  width: 40%;
   height: 252px;
   -webkit-box-shadow: 0.1px 0.1px 0.1px 0.1px #eaeaea;
           box-shadow: 0.1px 0.1px 0.1px 0.1px #eaeaea;
@@ -387,6 +417,14 @@ main {
   border-radius: 10px;
   overflow: hidden;
   background-color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .Restaurantsbox__List__Cards {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .Restaurantsbox__List__Cards__imageframe {
@@ -538,9 +576,7 @@ main {
   -webkit-text-fill-color: transparent;
 }
 
-/* Menu list*/
-/* this is how you display the list of food in menus */
-.Menu__content__section ul {
+.Restaurantsbox__List .Menu__content__section ul {
   list-style-type: none;
   padding: 0;
   width: 100%;
@@ -548,7 +584,7 @@ main {
   margin-bottom: auto;
 }
 
-.Menu__content__section__food {
+.Restaurantsbox__List .Menu__content__section__food {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -572,27 +608,27 @@ main {
           box-shadow: #e7e7e7 1px 1px 1px 1px;
 }
 
-.Menu__content__section__food:hover .Menu__content__section__food__checked {
+.Restaurantsbox__List .Menu__content__section__food:hover .Menu__content__section__food__checked {
   -webkit-animation: checkin 0.4s ease-in-out both;
           animation: checkin 0.4s ease-in-out both;
 }
 
-.Menu__content__section__food:hover .Menu__content__section__food__checked__box {
+.Restaurantsbox__List .Menu__content__section__food:hover .Menu__content__section__food__checked__box {
   -webkit-animation: rotate_checkin 0.4s 200ms ease-in-out both;
           animation: rotate_checkin 0.4s 200ms ease-in-out both;
 }
 
-.Menu__content__section__food:not(:hover) .Menu__content__section__food__checked {
+.Restaurantsbox__List .Menu__content__section__food:not(:hover) .Menu__content__section__food__checked {
   -webkit-animation: checkout 0.4s ease-in-out both;
           animation: checkout 0.4s ease-in-out both;
 }
 
-.Menu__content__section__food:not(:hover) .Menu__content__section__food__checked__box {
+.Restaurantsbox__List .Menu__content__section__food:not(:hover) .Menu__content__section__food__checked__box {
   -webkit-animation: rotate_checkout 0.4s 200ms ease-in-out both;
           animation: rotate_checkout 0.4s 200ms ease-in-out both;
 }
 
-.Menu__content__section__food__textbox {
+.Restaurantsbox__List .Menu__content__section__food__textbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -610,7 +646,7 @@ main {
           flex: 1 1 auto;
 }
 
-.Menu__content__section__food__textbox__name {
+.Restaurantsbox__List .Menu__content__section__food__textbox__name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -624,7 +660,7 @@ main {
   width: 80%;
 }
 
-.Menu__content__section__food__textbox__name__title {
+.Restaurantsbox__List .Menu__content__section__food__textbox__name__title {
   font-size: 1.2em;
   margin-top: 2px;
   margin-bottom: 2px;
@@ -635,7 +671,7 @@ main {
   text-overflow: ellipsis;
 }
 
-.Menu__content__section__food__textbox__name__description {
+.Restaurantsbox__List .Menu__content__section__food__textbox__name__description {
   margin-top: 2px;
   margin-bottom: 2px;
   margin-left: 5px;
@@ -645,7 +681,7 @@ main {
   text-overflow: ellipsis;
 }
 
-.Menu__content__section__food__textbox__pricebox {
+.Restaurantsbox__List .Menu__content__section__food__textbox__pricebox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -661,11 +697,11 @@ main {
   margin-right: 5%;
 }
 
-.Menu__content__section__food__textbox__pricebox__price {
+.Restaurantsbox__List .Menu__content__section__food__textbox__pricebox__price {
   font-size: 0.8em;
 }
 
-.Menu__content__section__food__checked {
+.Restaurantsbox__List .Menu__content__section__food__checked {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -682,12 +718,12 @@ main {
   color: #ffffff;
 }
 
-.Menu__content__section__food__checked__box {
+.Restaurantsbox__List .Menu__content__section__food__checked__box {
   width: 19px;
   height: 19px;
 }
 
-.Menu__content__section__food__checked__box__i {
+.Restaurantsbox__List .Menu__content__section__food__checked__box__i {
   font-size: 19px;
 }
 
@@ -734,7 +770,7 @@ main {
   border: none;
   border-radius: 50px;
   height: 50px;
-  width: 58%;
+  width: 40%;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(#ff79da, #9356dc);
   font-size: 0.9em;
@@ -744,6 +780,12 @@ main {
   text-align: center;
   cursor: pointer;
   line-height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .Explorebox__Button {
+    width: 58%;
+  }
 }
 
 .Explorebox__Button:hover .Explorebox__Button__bg {
@@ -990,7 +1032,7 @@ main {
   border: none;
   border-radius: 50px;
   height: 50px;
-  width: 58%;
+  width: 40%;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(#ff79da, #9356dc);
   font-size: 0.9em;
@@ -1000,6 +1042,12 @@ main {
   text-align: center;
   cursor: pointer;
   line-height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .Menu__footer__button {
+    width: 58%;
+  }
 }
 
 .Menu__footer__button:hover .Explorebox__Button__bg {

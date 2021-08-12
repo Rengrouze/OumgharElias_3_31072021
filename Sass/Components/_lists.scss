@@ -5,7 +5,7 @@
    align-items: center;
    justify-content: space-evenly;
    height: 70px;
-   width: 90%;
+   width: 40%;
    margin-left: auto;
    margin-right: auto;
    margin-top: 21.5px;
@@ -16,6 +16,9 @@
    font-size: 1em;
    font-weight: bold;
    position: relative;
+   @media screen and (max-width: 767px) {
+      width: 90%;
+   }
    &__number {
       position: absolute;
       left: -10px;
@@ -41,170 +44,184 @@
       background: $color-Howtobutton3;
    }
 }
-.Restaurantsbox__List__Cards {
-   margin-left: auto;
-   margin-right: auto;
-   width: 89%;
-   height: 252px;
-   box-shadow: 0.1px 0.1px 0.1px 0.1px $color-locationbox;
-   border: $color-locationbox 0.1px solid;
-   margin-top: 8px;
-   margin-bottom: 8px;
-   border-radius: 10px;
-   overflow: hidden;
-   background-color: $color-light;
-   &__imageframe {
-      display: block;
-      height: 175px;
-      position: relative;
-      @include images;
-      @include restaurantclass;
-      &__newbox {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         width: 80px;
-         height: 30px;
-         position: absolute;
-         top: 12px;
-         right: 8px;
-         background-color: $color-tertiary;
-         color: $color-tertiarytext;
-      }
+.Restaurantsbox__List {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-evenly;
+   @media (max-width: 765px) {
+      flex-direction: column;
    }
-   &__titlebox {
-      height: 77px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-left: 8px;
-      padding-right: 8px;
-      &__onlytext {
-         text-decoration: none;
-         color: black;
-         display: flex;
-         height: 100%;
-         flex-direction: column;
-         &__title {
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-bottom: auto;
-            margin-top: auto;
-         }
-         &__location {
-            margin-top: auto;
-            margin-bottom: auto;
-         }
-      }
-      &__heart {
-         &:hover .Restaurantsbox__List__Cards__titlebox__heart__empty {
-            opacity: 0;
-         }
-         &:hover .Restaurantsbox__List__Cards__titlebox__heart__bg {
-            opacity: 1;
-         }
-         height: 16px;
-         width: 16px;
-         @include like;
-      }
-   }
-}
-/* Menu list*/
-/* this is how you display the list of food in menus */
-.Menu__content__section {
-   & ul {
-      @include list-style-type-none;
-   }
-   &__food {
-      display: flex;
-      background-color: $color-light;
-      justify-content: space-between;
-      align-items: center;
-      overflow: hidden;
-      cursor: pointer;
-      height: 68px;
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
+   &__Cards {
+      width: 40%;
+      height: 252px;
+      box-shadow: 0.1px 0.1px 0.1px 0.1px $color-locationbox;
+      border: $color-locationbox 0.1px solid;
       margin-top: 8px;
       margin-bottom: 8px;
       border-radius: 10px;
-      box-shadow: $color-shadow 1px 1px 1px 1px;
-      &:hover .Menu__content__section__food__checked {
-         animation: checkin $checktime ease-in-out both;
+      overflow: hidden;
+      background-color: $color-light;
+      @media screen and (max-width: 768px) {
+         width: 80%;
+         margin-left: auto;
+         margin-right: auto;
       }
-      &:hover .Menu__content__section__food__checked__box {
-         animation: rotate_checkin $checktime 200ms ease-in-out both;
-      }
-      &:not(:hover) .Menu__content__section__food__checked {
-         animation: checkout $checktime ease-in-out both;
-      }
-      &:not(:hover) .Menu__content__section__food__checked__box {
-         animation: rotate_checkout $checktime 200ms ease-in-out both;
-      }
-      &__textbox {
-         display: flex;
-         flex-direction: row;
-         justify-content: space-between;
-         height: 100%;
-         width: 10%;
-         flex: 1 1 auto;
-         &__name {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 80%;
 
+      &__imageframe {
+         display: block;
+         height: 175px;
+         position: relative;
+         @include images;
+         @include restaurantclass;
+         &__newbox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 30px;
+            position: absolute;
+            top: 12px;
+            right: 8px;
+            background-color: $color-tertiary;
+            color: $color-tertiarytext;
+         }
+      }
+      &__titlebox {
+         height: 77px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding-left: 8px;
+         padding-right: 8px;
+         &__onlytext {
+            text-decoration: none;
+            color: black;
+            display: flex;
+            height: 100%;
+            flex-direction: column;
             &__title {
                font-size: 1.2em;
-               margin-top: 2px;
-               margin-bottom: 2px;
-               margin-left: 5px;
-               white-space: nowrap;
-               overflow: hidden;
-               width: 100%;
-               text-overflow: ellipsis;
+               font-weight: bold;
+               margin-bottom: auto;
+               margin-top: auto;
             }
-            &__description {
-               margin-top: 2px;
-               margin-bottom: 2px;
-               margin-left: 5px;
-               white-space: nowrap;
-               width: 100%;
-               overflow: hidden;
-               text-overflow: ellipsis;
+            &__location {
+               margin-top: auto;
+               margin-bottom: auto;
             }
          }
-         &__pricebox {
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-end;
-            flex-shrink: 0;
-            height: 100%;
-            margin-right: 5%;
-
-            &__price {
-               font-size: 0.8em;
+         &__heart {
+            &:hover .Restaurantsbox__List__Cards__titlebox__heart__empty {
+               opacity: 0;
             }
+            &:hover .Restaurantsbox__List__Cards__titlebox__heart__bg {
+               opacity: 1;
+            }
+            height: 16px;
+            width: 16px;
+            @include like;
          }
       }
-      &__checked {
+   }
+
+   /* Menu list*/
+   /* this is how you display the list of food in menus */
+   .Menu__content__section {
+      & ul {
+         @include list-style-type-none;
+      }
+      &__food {
          display: flex;
+         background-color: $color-light;
+         justify-content: space-between;
          align-items: center;
-         margin-right: -15%;
-         justify-content: center;
-         background-color: $color-tertiary;
-         height: 100%;
-         min-width: 15%;
+         overflow: hidden;
+         cursor: pointer;
+         height: 68px;
+         width: 100%;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 8px;
+         margin-bottom: 8px;
+         border-radius: 10px;
+         box-shadow: $color-shadow 1px 1px 1px 1px;
+         &:hover .Menu__content__section__food__checked {
+            animation: checkin $checktime ease-in-out both;
+         }
+         &:hover .Menu__content__section__food__checked__box {
+            animation: rotate_checkin $checktime 200ms ease-in-out both;
+         }
+         &:not(:hover) .Menu__content__section__food__checked {
+            animation: checkout $checktime ease-in-out both;
+         }
+         &:not(:hover) .Menu__content__section__food__checked__box {
+            animation: rotate_checkout $checktime 200ms ease-in-out both;
+         }
+         &__textbox {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 100%;
+            width: 10%;
+            flex: 1 1 auto;
+            &__name {
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               width: 80%;
 
-         color: $color-light;
+               &__title {
+                  font-size: 1.2em;
+                  margin-top: 2px;
+                  margin-bottom: 2px;
+                  margin-left: 5px;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  width: 100%;
+                  text-overflow: ellipsis;
+               }
+               &__description {
+                  margin-top: 2px;
+                  margin-bottom: 2px;
+                  margin-left: 5px;
+                  white-space: nowrap;
+                  width: 100%;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+               }
+            }
+            &__pricebox {
+               display: flex;
+               align-items: flex-end;
+               justify-content: flex-end;
+               flex-shrink: 0;
+               height: 100%;
+               margin-right: 5%;
 
-         &__box {
-            width: 19px;
-            height: 19px;
+               &__price {
+                  font-size: 0.8em;
+               }
+            }
+         }
+         &__checked {
+            display: flex;
+            align-items: center;
+            margin-right: -15%;
+            justify-content: center;
+            background-color: $color-tertiary;
+            height: 100%;
+            min-width: 15%;
 
-            &__i {
-               font-size: 19px;
+            color: $color-light;
+
+            &__box {
+               width: 19px;
+               height: 19px;
+
+               &__i {
+                  font-size: 19px;
+               }
             }
          }
       }
