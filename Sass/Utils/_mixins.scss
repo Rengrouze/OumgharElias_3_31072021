@@ -47,9 +47,11 @@
    &:hover {
       & .Explorebox__Button__bg {
          opacity: 1;
+         box-shadow: 3px 3px 3px 3px $color-shadow2;
       }
       & .Menu__footer__button__bg {
          opacity: 1;
+         box-shadow: 3px 3px 3px 3px $color-shadow2;
       }
    }
    &__bg {

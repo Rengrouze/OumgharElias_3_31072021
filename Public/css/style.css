@@ -790,10 +790,14 @@ main {
 
 .Explorebox__Button:hover .Explorebox__Button__bg {
   opacity: 1;
+  -webkit-box-shadow: 3px 3px 3px 3px #7e7e7e;
+          box-shadow: 3px 3px 3px 3px #7e7e7e;
 }
 
 .Explorebox__Button:hover .Menu__footer__button__bg {
   opacity: 1;
+  -webkit-box-shadow: 3px 3px 3px 3px #7e7e7e;
+          box-shadow: 3px 3px 3px 3px #7e7e7e;
 }
 
 .Explorebox__Button__bg {
@@ -1052,10 +1056,14 @@ main {
 
 .Menu__footer__button:hover .Explorebox__Button__bg {
   opacity: 1;
+  -webkit-box-shadow: 3px 3px 3px 3px #7e7e7e;
+          box-shadow: 3px 3px 3px 3px #7e7e7e;
 }
 
 .Menu__footer__button:hover .Menu__footer__button__bg {
   opacity: 1;
+  -webkit-box-shadow: 3px 3px 3px 3px #7e7e7e;
+          box-shadow: 3px 3px 3px 3px #7e7e7e;
 }
 
 .Menu__footer__button__bg {
