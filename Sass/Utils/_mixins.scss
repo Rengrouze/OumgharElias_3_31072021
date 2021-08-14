@@ -41,19 +41,11 @@
    text-align: center;
    cursor: pointer;
    line-height: 50px;
+
    @media screen and (max-width: 768px) {
       width: 58%;
    }
-   &:hover {
-      & .Explorebox__Button__bg {
-         opacity: 1;
-         box-shadow: 3px 3px 3px 3px $color-shadow2;
-      }
-      & .Menu__footer__button__bg {
-         opacity: 1;
-         box-shadow: 3px 3px 3px 3px $color-shadow2;
-      }
-   }
+
    &__bg {
       position: absolute;
       top: 0;
@@ -63,8 +55,12 @@
       z-index: -1;
       bottom: 0;
       background: linear-gradient($color-secondarylight, $color-primarylight);
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
+      &:hover {
+         animation: buttonEffect1 300ms ease-in-out both;
+      }
+      &:not(:hover) {
+         animation: buttonEffect2 300ms ease-in-out both;
+      }
    }
 }
 

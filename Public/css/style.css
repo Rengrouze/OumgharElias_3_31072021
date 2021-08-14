@@ -164,6 +164,57 @@
 }
 
 /* end of the green box */
+@-webkit-keyframes buttonEffect1 {
+  0% {
+    opacity: 0;
+    -webkit-box-shadow: 1px 1px 1px 1px #7e7e7e;
+            box-shadow: 1px 1px 1px 1px #7e7e7e;
+  }
+  100% {
+    opacity: 1;
+    -webkit-box-shadow: 3px 3px 3px 3px #7e7e7e;
+            box-shadow: 3px 3px 3px 3px #7e7e7e;
+  }
+}
+@keyframes buttonEffect1 {
+  0% {
+    opacity: 0;
+    -webkit-box-shadow: 1px 1px 1px 1px #7e7e7e;
+            box-shadow: 1px 1px 1px 1px #7e7e7e;
+  }
+  100% {
+    opacity: 1;
+    -webkit-box-shadow: 3px 3px 3px 3px #7e7e7e;
+            box-shadow: 3px 3px 3px 3px #7e7e7e;
+  }
+}
+
+@-webkit-keyframes buttonEffect2 {
+  0% {
+    opacity: 1;
+    -webkit-box-shadow: 3px 3px 3px 3px #7e7e7e;
+            box-shadow: 3px 3px 3px 3px #7e7e7e;
+  }
+  100% {
+    opacity: 0;
+    -webkit-box-shadow: 1px 1px 1px 1px #7e7e7e;
+            box-shadow: 1px 1px 1px 1px #7e7e7e;
+  }
+}
+
+@keyframes buttonEffect2 {
+  0% {
+    opacity: 1;
+    -webkit-box-shadow: 3px 3px 3px 3px #7e7e7e;
+            box-shadow: 3px 3px 3px 3px #7e7e7e;
+  }
+  100% {
+    opacity: 0;
+    -webkit-box-shadow: 1px 1px 1px 1px #7e7e7e;
+            box-shadow: 1px 1px 1px 1px #7e7e7e;
+  }
+}
+
 /* list of mixin not in order of use */
 /* only for home page, allow to center the content and negate default list style*/
 /* allow to negate default list style */
@@ -231,6 +282,10 @@
   text-decoration: none;
   color: #ffffff;
   font-family: "Roboto";
+}
+
+.footer__content__list__item__link:hover {
+  text-decoration: underline;
 }
 
 .footer__content__list__item__link__icon {
@@ -423,6 +478,10 @@ main {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.Restaurantsbox__List__Cards:hover {
+  border: solid 0.5px #9356dc;
 }
 
 .Restaurantsbox__List__Cards__imageframe {
@@ -788,18 +847,6 @@ main {
   }
 }
 
-.Explorebox__Button:hover .Explorebox__Button__bg {
-  opacity: 1;
-  -webkit-box-shadow: 3px 3px 3px 3px #7e7e7e;
-          box-shadow: 3px 3px 3px 3px #7e7e7e;
-}
-
-.Explorebox__Button:hover .Menu__footer__button__bg {
-  opacity: 1;
-  -webkit-box-shadow: 3px 3px 3px 3px #7e7e7e;
-          box-shadow: 3px 3px 3px 3px #7e7e7e;
-}
-
 .Explorebox__Button__bg {
   position: absolute;
   top: 0;
@@ -810,9 +857,16 @@ main {
   bottom: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#fface8), to(#ae80e5));
   background: linear-gradient(#fface8, #ae80e5);
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
+}
+
+.Explorebox__Button__bg:hover {
+  -webkit-animation: buttonEffect1 300ms ease-in-out both;
+          animation: buttonEffect1 300ms ease-in-out both;
+}
+
+.Explorebox__Button__bg:not(:hover) {
+  -webkit-animation: buttonEffect2 300ms ease-in-out both;
+          animation: buttonEffect2 300ms ease-in-out both;
 }
 
 .Howtobox {
@@ -941,7 +995,7 @@ main {
 
 .Menu__header__heart {
   font-size: 1.9em;
-  width: 30px;
+  width: 32px;
   height: 30px;
   position: relative;
 }
@@ -1054,18 +1108,6 @@ main {
   }
 }
 
-.Menu__footer__button:hover .Explorebox__Button__bg {
-  opacity: 1;
-  -webkit-box-shadow: 3px 3px 3px 3px #7e7e7e;
-          box-shadow: 3px 3px 3px 3px #7e7e7e;
-}
-
-.Menu__footer__button:hover .Menu__footer__button__bg {
-  opacity: 1;
-  -webkit-box-shadow: 3px 3px 3px 3px #7e7e7e;
-          box-shadow: 3px 3px 3px 3px #7e7e7e;
-}
-
 .Menu__footer__button__bg {
   position: absolute;
   top: 0;
@@ -1076,7 +1118,14 @@ main {
   bottom: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#fface8), to(#ae80e5));
   background: linear-gradient(#fface8, #ae80e5);
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
+}
+
+.Menu__footer__button__bg:hover {
+  -webkit-animation: buttonEffect1 300ms ease-in-out both;
+          animation: buttonEffect1 300ms ease-in-out both;
+}
+
+.Menu__footer__button__bg:not(:hover) {
+  -webkit-animation: buttonEffect2 300ms ease-in-out both;
+          animation: buttonEffect2 300ms ease-in-out both;
 }

@@ -17,6 +17,9 @@
                text-decoration: none;
                color: $color-light;
                font-family: "Roboto";
+               &:hover {
+                  text-decoration: underline;
+               }
                &__icon {
                   margin-right: 5px;
                   width: 15px;

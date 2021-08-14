@@ -40,6 +40,7 @@
    background-color: $color-background;
    width: 100%;
    margin-bottom: 30px;
+
    @include list-box-home;
    /* you'll find rules for this box in _list.scss */
 }

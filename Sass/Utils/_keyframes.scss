@@ -68,3 +68,24 @@
    }
 }
 /* end of the green box */
+
+@keyframes buttonEffect1 {
+   0% {
+      opacity: 0;
+      box-shadow: 1px 1px 1px 1px $color-shadow2;
+   }
+   100% {
+      opacity: 1;
+      box-shadow: 3px 3px 3px 3px $color-shadow2;
+   }
+}
+@keyframes buttonEffect2 {
+   0% {
+      opacity: 1;
+      box-shadow: 3px 3px 3px 3px $color-shadow2;
+   }
+   100% {
+      opacity: 0;
+      box-shadow: 1px 1px 1px 1px $color-shadow2;
+   }
+}
