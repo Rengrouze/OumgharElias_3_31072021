@@ -45,6 +45,12 @@
    @media screen and (max-width: 768px) {
       width: 58%;
    }
+   &:hover div {
+      animation: buttonEffect1 300ms ease-in-out both;
+   }
+   &:not(:hover) div {
+      animation: buttonEffect2 300ms ease-in-out both;
+   }
 
    &__bg {
       position: absolute;
@@ -55,12 +61,6 @@
       z-index: -1;
       bottom: 0;
       background: linear-gradient($color-secondarylight, $color-primarylight);
-      &:hover {
-         animation: buttonEffect1 300ms ease-in-out both;
-      }
-      &:not(:hover) {
-         animation: buttonEffect2 300ms ease-in-out both;
-      }
    }
 }
 

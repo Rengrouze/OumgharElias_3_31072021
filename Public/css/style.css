@@ -847,6 +847,16 @@ main {
   }
 }
 
+.Explorebox__Button:hover div {
+  -webkit-animation: buttonEffect1 300ms ease-in-out both;
+          animation: buttonEffect1 300ms ease-in-out both;
+}
+
+.Explorebox__Button:not(:hover) div {
+  -webkit-animation: buttonEffect2 300ms ease-in-out both;
+          animation: buttonEffect2 300ms ease-in-out both;
+}
+
 .Explorebox__Button__bg {
   position: absolute;
   top: 0;
@@ -857,16 +867,6 @@ main {
   bottom: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#fface8), to(#ae80e5));
   background: linear-gradient(#fface8, #ae80e5);
-}
-
-.Explorebox__Button__bg:hover {
-  -webkit-animation: buttonEffect1 300ms ease-in-out both;
-          animation: buttonEffect1 300ms ease-in-out both;
-}
-
-.Explorebox__Button__bg:not(:hover) {
-  -webkit-animation: buttonEffect2 300ms ease-in-out both;
-          animation: buttonEffect2 300ms ease-in-out both;
 }
 
 .Howtobox {
@@ -1108,6 +1108,16 @@ main {
   }
 }
 
+.Menu__footer__button:hover div {
+  -webkit-animation: buttonEffect1 300ms ease-in-out both;
+          animation: buttonEffect1 300ms ease-in-out both;
+}
+
+.Menu__footer__button:not(:hover) div {
+  -webkit-animation: buttonEffect2 300ms ease-in-out both;
+          animation: buttonEffect2 300ms ease-in-out both;
+}
+
 .Menu__footer__button__bg {
   position: absolute;
   top: 0;
@@ -1118,14 +1128,4 @@ main {
   bottom: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#fface8), to(#ae80e5));
   background: linear-gradient(#fface8, #ae80e5);
-}
-
-.Menu__footer__button__bg:hover {
-  -webkit-animation: buttonEffect1 300ms ease-in-out both;
-          animation: buttonEffect1 300ms ease-in-out both;
-}
-
-.Menu__footer__button__bg:not(:hover) {
-  -webkit-animation: buttonEffect2 300ms ease-in-out both;
-          animation: buttonEffect2 300ms ease-in-out both;
 }
